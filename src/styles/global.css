@@ -10,8 +10,8 @@
   --linden: #5e7a22;
   --bermet: #8c1d40;
 
-  --serif: 'Literata Variable', Georgia, 'Times New Roman', serif;
-  --sans: 'Golos Text Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --serif: 'Piazzolla Variable', Georgia, 'Times New Roman', serif;
+  --sans: 'Onest Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   /* модульная шкала 1.25 */
   --s-1: 0.8rem;
@@ -75,7 +75,7 @@ a:hover { color: var(--bermet); text-decoration-color: currentColor; }
 @media (max-width: 899px) { .portrait { order: -1; width: min(70%, 18rem); justify-self: start; } }
 .hero .legend { grid-column: 1 / -1; }
 .hero h1 {
-  font-size: var(--s5); line-height: 1.02; letter-spacing: -0.025em; font-weight: 720;
+  font-size: var(--s5); line-height: 1.04; letter-spacing: -0.01em; word-spacing: 0.08em; font-weight: 780;
   font-variation-settings: 'opsz' 72; margin: 0 0 0.35rem;
 }
 .hero .alt { font-family: var(--sans); color: var(--ink-soft); font-size: var(--s-1); margin: 0 0 1.6rem; }
