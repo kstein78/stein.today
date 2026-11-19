@@ -26,9 +26,19 @@ const topJobs = jobs.filter((j) => !j.cvOnly).slice(0, 4);
         </div>
       </div>
       <Portrait lang={lang} />
-      <ul class="legend" aria-label={t.legendTitle}>
-        {statuses.map((s) => <li><Symbol status={s} inline size={14} />{t.legend[s]}</li>)}
-      </ul>
+    </section>
+
+    <section class="section help" id="help">
+      <header><h2>{t.help.title}</h2><p>{t.help.intro}</p></header>
+      <div>
+        <ul class="help-grid">
+          {t.help.items.map((h) => <li><h3>{h.title}</h3><p>{h.text}</p></li>)}
+        </ul>
+        <div class="help-extra">
+          <div class="ev"><h3>{t.help.evTitle}</h3><p>{t.help.evText}</p></div>
+          <div class="move"><h3>{t.help.moveTitle}</h3><p>{t.help.moveText}</p></div>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="work">
@@ -51,7 +61,12 @@ const topJobs = jobs.filter((j) => !j.cvOnly).slice(0, 4);
     </section>
 
     <section class="section" id="projects">
-      <header><h2>{t.investTitle}</h2><p>{t.investIntro}</p></header>
+      <header>
+        <h2>{t.investTitle}</h2><p>{t.investIntro}</p>
+        <ul class="legend" aria-label={t.legendTitle}>
+          {statuses.map((s) => <li><Symbol status={s} inline size={14} />{t.legend[s]}</li>)}
+        </ul>
+      </header>
       <ul class="rows">{itemsBy('invest').map((it) => <Row item={it} lang={lang} />)}</ul>
     </section>
 

@@ -21,7 +21,7 @@ Updated: 2026-11-19
 - Скриншоты десктоп/мобайл проверены.
 
 ## Next step
-1. Получить от Кости фото (портрет 4:5) → public/photo.jpg, перегенерировать og.png с фото.
+1. ✓ Фото: главная — 30710836_…jpg (ч/б, обрезка 4:5) → public/photo.jpg; резюме — 26026059_…jpg → public/photo-cv.jpg; 404 — «Who is Constantin?» (66759481_…jpg); og.png с фото. Источник: C:\Users\kstei\Desktop\Личное\!!!Фото. Групповое GSTAR.jpg не использовать (другие люди).
 2. Когда 7pro8.com выйдет — поставить url в projects/7pro8.json и убрать «скоро».
 3. ADSBase: начало 07.2025 со слов Кости «кажется» — подтвердить.
 4. Сервер 2.28.137.150: A-записи stein.today/www → IP, vhost по `deploy/nginx-stein.today.conf`, certbot, SSH-ключ для деплоя → секреты в GitHub.
@@ -36,7 +36,7 @@ Updated: 2026-11-19
 - ✗ Google Fonts по CDN — проблема с DSGVO (решение суда в Мюнхене), заменено на self-host @fontsource.
 - ✗ Карта мест на первом экране — Костя: «слишком локально», заменено на фото.
 - ✗ Скачать фото со stein-1.com (static.tildacdn.net) — прокси среды: CONNECT 403 — reopen if: никогда, просить файл.
-- ✗ Фото из Google Drive — файлы «Stein1.jpg» оказались сканами документов, «avatar.jpg» — кукла, «stein 5x5.jpg» — не Костя — reopen if: Костя назовёт конкретный файл.
+- ✗ Фото из Google Drive — найденные файлы не подходят (не портреты Кости) — reopen if: никогда; фото берём из C:\Users\kstei\Desktop\Личное\!!!Фото.
 - ✗ Literata + Golos Text — Костя: «похоже на стандартные клод-сайты»; отклонены также Brygada 1918, Bona Nova + Ysabeau, Unbounded + Geologica.
 - ✗ logartis.info как источник шрифтов — это портфолио иллюстратора (WebGL), шрифтов там нет; ссылка у Кости обрезалась — reopen if: пришлёт полную ссылку.
 - ✗ GitHub Pages — Костя выбрал свой сервер 2.28.137.150 (где rakovac.rs).
@@ -52,6 +52,5 @@ Updated: 2026-11-19
 - Провала: год образования «1924 или 1926» (так на provala.rs), не просто 1924.
 
 ## Open questions for the user
-- Фото для первого экрана.
 
 - Публиковать ли email? Сейчас только мессенджеры и соцсети.

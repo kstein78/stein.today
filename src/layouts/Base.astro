@@ -35,6 +35,8 @@ const built = new Date().toISOString().slice(0, 10);
     '@context': 'https://schema.org', '@type': 'Person', name: 'Konstantin Stein',
     alternateName: ['Константин Штейн', 'Konstantin Štajn', 'Константин Штајн', 'Kosta Stein'],
     url: site, jobTitle: 'CEO, founder, media executive',
+    knowsAbout: ['IT management', 'Digital media management', 'Account management', 'Partnerships', 'Naming', 'Branding', 'Web development', 'Electric vehicles', 'Relocation to Serbia', 'Antique dolls', 'Local history of Vojvodina'],
+    knowsLanguage: ['ru', 'de', 'en', 'sr', 'uk'],
     worksFor: { '@type': 'Organization', name: 'Optilife', url: 'https://optilife.rs' },
     address: { '@type': 'PostalAddress', addressLocality: 'Rakovac', addressCountry: 'RS' },
     sameAs: ['https://www.linkedin.com/in/konstantinstein/', 'https://www.facebook.com/konstantin.stein', 'https://x.com/konstantinstein', 'https://github.com/kstein78', 'https://www.instagram.com/kstein78/', 'https://www.google.com/maps/contrib/109485321545547043572/', 'https://stein-1.com'],
@@ -45,6 +47,7 @@ const built = new Date().toISOString().slice(0, 10);
   <header class="wrap top">
     <a class="home" href={`/${lang}/`}>{t.name}</a>
     <nav aria-label={t.navAria}>
+      <a href={`/${lang}/#help`}>{t.nav.help}</a>
       <a href={`/${lang}/#work`}>{t.nav.work}</a>
       <a href={`/${lang}/#projects`}>{t.nav.invest}</a>
       <a href={`/${lang}/#sites`}>{t.nav.sites}</a>

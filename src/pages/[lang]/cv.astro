@@ -10,8 +10,13 @@ const c = t.cv;
 <Base lang={lang} title={c.metaTitle} description={c.lead} path="cv/">
   <article class="wrap page cv">
     <a class="crumb" href={`/${lang}/`}>← {t.back}</a>
-    <h1>{t.name}</h1>
-    <p class="summary">{c.lead}</p>
+    <div class="cv-head">
+      <img src="/photo-cv.jpg" alt={t.name} width="480" height="480" />
+      <div>
+        <h1>{t.name}</h1>
+        <p class="summary">{c.lead}</p>
+      </div>
+    </div>
     <div class="actions no-print"><button class="btn" type="button" onclick="window.print()">{c.print}</button></div>
 
     <h2>{c.strengths}</h2>
