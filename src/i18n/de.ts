@@ -9,7 +9,7 @@ export default {
   skip: 'Zum Inhalt',
   navAria: 'Bereiche',
   nav: { help: 'Leistungen', work: 'Beruf', invest: 'Projekte', sites: 'Websites', hobby: 'Leidenschaften', contact: 'Kontakt' },
-  lead: 'Medienmanager und Unternehmer. Seit 1995 in den Medien: Radio, Nachrichtenportale mit Millionenpublikum, heute KI-gestützte IT-Produkte. Seit 2023 lebe ich in Rakovac an der Fruška Gora, bei Novi Sad.',
+  lead: 'Medienmanager und Unternehmer. Seit 1995 in der IT, seit 1998 in den Medien, ab 2000 hauptberuflich: Radio, Nachrichtenportale mit Millionenpublikum, heute KI-gestützte IT-Produkte. Seit 2023 lebe ich in Rakovac an der Fruška Gora, bei Novi Sad.',
   leadSecond: 'Hier ist alles versammelt: meine Arbeit, Projekte, die Investoren und Partner suchen, meine Websites und das, womit meine Frau und ich uns außerhalb der Arbeit beschäftigen.',
   ctaCv: 'Ausführlicher Lebenslauf',
   ctaContact: 'Schreiben Sie mir',
@@ -41,7 +41,7 @@ export default {
     moveText: 'Ich bin 2023 hergezogen und erkläre Freunden und Bekannten oft, wie hier alles funktioniert: welche Unterlagen man braucht, zu welcher Bank man geht, womit man anfängt. Das ist Erfahrung, keine Rechtsberatung.',
   },
   workTitle: 'Beruf',
-  workIntro: 'Dreißig Jahre zwischen Redaktion, Studio und Geschäftsführung. Ich baue Teams auf, bringe Produkte an den Start und zum Umsatz.',
+  workIntro: 'Mehr als ein Vierteljahrhundert zwischen Redaktion, Studio und Geschäftsführung. Ich baue Teams auf, bringe Produkte an den Start und zum Umsatz.',
   workMore: 'Kompletter Lebenslauf: Erfahrung, Zahlen, Ausbildung, Sprachen',
   investTitle: 'Projekte auf der Suche nach Investoren und Partnern',
   investIntro: 'Prototypen und Pläne liegen vor. Ich suche Menschen, die helfen, sie an den Markt zu bringen — mit Kapital, Kontakten oder Know-how.',
@@ -89,7 +89,7 @@ export default {
   cv: {
     title: 'Lebenslauf',
     metaTitle: 'Konstantin Stein — Lebenslauf',
-    lead: 'CEO, Gründer und Medienmanager. Seit 1995 in Medien und IT, Erfahrung in der Unternehmensführung in fünf Ländern.',
+    lead: 'CEO, Gründer und Medienmanager. Seit 1995 in der IT, seit 1998 in den Medien, Erfahrung in der Unternehmensführung in fünf Ländern.',
     strengths: 'Was ich gut kann',
     strengthsList: [
       'Ich baue schnell starke Teams auf und führe sie zum Ziel.',

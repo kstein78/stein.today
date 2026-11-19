@@ -10,7 +10,7 @@ export default {
   skip: 'Na sadržaj',
   navAria: 'Odeljci',
   nav: { help: 'Pomoć', work: 'Posao', invest: 'Projekti', sites: 'Sajtovi', hobby: 'Hobiji', contact: 'Kontakt' },
-  lead: 'Medijski menadžer i preduzetnik. U medijima od 1995: radio, informativni sajtovi sa milionskom publikom, a danas IT proizvodi sa veštačkom inteligencijom. Od 2023. živim u Rakovcu na Fruškoj gori, kod Novog Sada.',
+  lead: 'Medijski menadžer i preduzetnik. U IT-u od 1995, u medijima od 1998, a punom parom od 2000: radio, informativni sajtovi sa milionskom publikom, a danas IT proizvodi sa veštačkom inteligencijom. Od 2023. živim u Rakovcu na Fruškoj gori, kod Novog Sada.',
   leadSecond: 'Ovde je sve na jednom mestu: posao, projekti kojima trebaju investitori i partneri, moji sajtovi i ono čime se supruga i ja bavimo van posla.',
   ctaCv: 'Detaljan CV',
   ctaContact: 'Pišite mi',
@@ -42,7 +42,7 @@ export default {
     moveText: 'Preselio sam se 2023. i često prijateljima i poznanicima objašnjavam kako ovde stvari funkcionišu: koja dokumenta pripremiti, u koju banku ići, odakle početi. Delim iskustvo, ovo nije pravni savet.',
   },
   workTitle: 'Posao',
-  workIntro: 'Trideset godina između redakcije, studija i biznisa. Okupljam timove, pokrećem proizvode i dovodim ih do prihoda.',
+  workIntro: 'Više od četvrt veka između redakcije, studija i biznisa. Okupljam timove, pokrećem proizvode i dovodim ih do prihoda.',
   workMore: 'Ceo CV: iskustvo, brojke, obrazovanje, jezici',
   investTitle: 'Projekti koji traže investitore i partnere',
   investIntro: 'Prototipovi i planovi su spremni. Tražim ljude koji mogu da pomognu da stignu do tržišta — kapitalom, kontaktima ili znanjem.',
@@ -90,7 +90,7 @@ export default {
   cv: {
     title: 'CV',
     metaTitle: 'Konstantin Štajn — CV',
-    lead: 'CEO, osnivač i medijski menadžer. U medijima i IT-u od 1995, iskustvo u vođenju biznisa u pet zemalja.',
+    lead: 'CEO, osnivač i medijski menadžer. U IT-u od 1995, u medijima od 1998, iskustvo u vođenju biznisa u pet zemalja.',
     strengths: 'Šta radim dobro',
     strengthsList: [
       'Brzo okupljam jake timove i vodim ih do cilja.',
