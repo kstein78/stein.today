@@ -61,10 +61,10 @@ export const jobs: Job[] = [
     years: '2022 — 2024',
     org: 'Blitz Technologies LLC',
     t: {
-      ru: { org: 'Blitz Technologies LLC, Ереван', role: 'CEO', text: 'Операции в Сербии, Армении и Грузии, партнёрства с международными агентствами цифровых медиа и монетизации. С 2024 года компания заморожена.' },
-      en: { org: 'Blitz Technologies LLC, Yerevan', role: 'CEO', text: 'Operations across Serbia, Armenia and Georgia; partnerships with global digital media and monetisation agencies. The company has been dormant since 2024.' },
-      sr: { org: 'Blitz Technologies LLC, Jerevan', role: 'CEO', text: 'Poslovanje u Srbiji, Jermeniji i Gruziji, partnerstva sa međunarodnim agencijama za digitalne medije i monetizaciju. Kompanija miruje od 2024.' },
-      de: { org: 'Blitz Technologies LLC, Jerewan', role: 'CEO', text: 'Operations in Serbien, Armenien und Georgien; Partnerschaften mit internationalen Digital-Media- und Monetarisierungsagenturen. Seit 2024 ruht die Geschäftstätigkeit.' },
+      ru: { org: 'Blitz Technologies LLC, Ереван', role: 'CEO', text: 'Операции в Армении, странах ЕС, Сингапуре и ОАЭ, партнёрства с международными агентствами цифровых медиа и монетизации. С 2024 года компания заморожена.' },
+      en: { org: 'Blitz Technologies LLC, Yerevan', role: 'CEO', text: 'Operations in Armenia, EU countries, Singapore and the UAE; partnerships with global digital media and monetisation agencies. The company has been dormant since 2024.' },
+      sr: { org: 'Blitz Technologies LLC, Jerevan', role: 'CEO', text: 'Poslovanje u Jermeniji, zemljama EU, Singapuru i UAE, partnerstva sa međunarodnim agencijama za digitalne medije i monetizaciju. Kompanija miruje od 2024.' },
+      de: { org: 'Blitz Technologies LLC, Jerewan', role: 'CEO', text: 'Operations in Armenien, EU-Ländern, Singapur und den VAE; Partnerschaften mit internationalen Digital-Media- und Monetarisierungsagenturen. Seit 2024 ruht die Geschäftstätigkeit.' },
     },
   },
   {
