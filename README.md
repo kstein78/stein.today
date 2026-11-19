@@ -36,19 +36,12 @@ npm run dev      # http://localhost:4321
 npm run build    # готовый сайт в dist/
 ```
 
-## Деплой на сервер
+## Деплой
 
-Workflow `.github/workflows/deploy.yml` на каждый push в `main` собирает сайт, проверяет ссылки и выкладывает `dist/` на сервер через rsync по SSH.
-Выкладка включится, когда в Settings → Secrets and variables → Actions будут заданы секреты:
+Сервер тот же, что у rakovac.rs. Ключи и секреты не нужны:
 
-| Секрет | Значение |
-|---|---|
-| `DEPLOY_HOST` | `2.28.137.150` |
-| `DEPLOY_USER` | пользователь SSH |
-| `DEPLOY_KEY` | приватный ключ (публичный — в `~/.ssh/authorized_keys` на сервере) |
-| `DEPLOY_PATH` | папка сайта, например `/var/www/stein.today` |
-| `DEPLOY_PORT` | порт SSH, если не 22 |
+1. Push в `main` → GitHub Actions собирает сайт, проверяет ссылки и кладёт готовые файлы в ветку `live` (вместе с `version.txt` — SHA коммита).
+2. Сервер раз в минуту забирает `live` и переключается на новую версию: скрипт `deploy/stein-update` в репозитории [rakovac.rs](https://github.com/kstein78/rakovac.rs), запускается cron'ом пользователя `deploy`. Настройки Caddy для stein.today лежат там же, в `deploy/Caddyfile`.
+3. Job `live` ждёт, пока https://stein.today/version.txt покажет новый коммит, и краснеет, если за 10 минут этого не случилось.
 
-На сервере: A-запись `stein.today` и `www.stein.today` → `2.28.137.150`, виртуальный хост — пример в `deploy/nginx-stein.today.conf` (или `deploy/.htaccess.example` для Apache), сертификат — `certbot`.
-
-Если удобнее без GitHub Actions: `npm run build` и залить содержимое `dist/` в папку сайта любым способом.
+На сервере, если что-то не так: `tail -50 /srv/rakovac/stein/update.log`, `cat /srv/rakovac/stein/deployed`.

@@ -1,10 +1,7 @@
-# Сборка на каждый push и PR. Выкладка на сервер — только из main и только если заданы секреты.
-# Секреты (Settings → Secrets and variables → Actions):
-#   DEPLOY_HOST  — 2.28.137.150
-#   DEPLOY_USER  — пользователь SSH на сервере
-#   DEPLOY_KEY   — приватный SSH-ключ (публичный — в ~/.ssh/authorized_keys на сервере)
-#   DEPLOY_PATH  — папка сайта на сервере, например /var/www/stein.today
-#   DEPLOY_PORT  — (необязательно) порт SSH, по умолчанию 22
+# stein.today: build on every push and PR; on main the ready site goes to branch "live".
+# The server (same one as rakovac.rs) pulls "live" every minute and switches to it
+# (github.com/kstein78/rakovac.rs → deploy/stein-update). No secrets needed: the repo is public.
+# Job "live" then waits until https://stein.today/version.txt shows this commit.
 name: build-and-deploy
 on:
   push:
@@ -12,48 +9,55 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
       - run: npm ci
       - run: npm run build
-      - run: node tools/check-links.mjs
-      - uses: actions/upload-artifact@v4
-        with:
-          name: dist
-          path: dist
-
-  deploy:
-    needs: build
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
-    env:
-      HAS_SECRETS: ${{ secrets.DEPLOY_HOST != '' && secrets.DEPLOY_KEY != '' }}
-    steps:
-      - name: Секреты не заданы — выкладка пропущена
-        if: env.HAS_SECRETS != 'true'
-        run: echo "::warning::Задайте DEPLOY_HOST, DEPLOY_USER, DEPLOY_KEY, DEPLOY_PATH, чтобы включить выкладку."
-      - uses: actions/download-artifact@v4
-        if: env.HAS_SECRETS == 'true'
-        with:
-          name: dist
-          path: dist
-      - name: rsync на сервер
-        if: env.HAS_SECRETS == 'true'
+      - name: Check internal links
+        run: node tools/check-links.mjs
+      - name: Publish to branch "live"
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         env:
-          KEY: ${{ secrets.DEPLOY_KEY }}
-          HOST: ${{ secrets.DEPLOY_HOST }}
-          USER: ${{ secrets.DEPLOY_USER }}
-          DEST: ${{ secrets.DEPLOY_PATH }}
-          PORT: ${{ secrets.DEPLOY_PORT || '22' }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          install -m 700 -d ~/.ssh
-          printf '%s\n' "$KEY" > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
-          ssh-keyscan -p "$PORT" -H "$HOST" >> ~/.ssh/known_hosts
-          rsync -az --delete -e "ssh -i ~/.ssh/id_deploy -p $PORT" dist/ "$USER@$HOST:$DEST/"
+          printf '%s\n' "$GITHUB_SHA" > dist/version.txt
+          cd dist
+          git init -q -b live
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "Build of $GITHUB_SHA"
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" live
+          echo "branch live = build of $GITHUB_SHA"
+
+  live:
+    needs: build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Wait until stein.today serves this commit
+        run: |
+          url=https://stein.today/version.txt
+          get() { curl -fsS --max-time 15 "$url?t=$(date +%s%N)" 2>/dev/null | head -1 || true; }
+          for i in $(seq 1 40); do
+            live=$(get)
+            if [ "$live" = "$GITHUB_SHA" ]; then echo "stein.today is live with $live"; exit 0; fi
+            sleep 15
+          done
+          echo "::error::after 10 minutes stein.today serves '${live:-nothing}', not $GITHUB_SHA. On the server: tail /srv/rakovac/stein/update.log"
+          exit 1
