@@ -9,7 +9,7 @@ export default {
   skip: 'Zum Inhalt',
   navAria: 'Bereiche',
   nav: { help: 'Leistungen', work: 'Beruf', invest: 'Projekte', sites: 'Websites', hobby: 'Leidenschaften', contact: 'Kontakt' },
-  lead: 'Medienmanager und Unternehmer. Seit 1995 in der IT, seit 1998 in den Medien, ab 2000 hauptberuflich: Radio, Nachrichtenportale mit Millionenpublikum, heute KI-gestützte IT-Produkte. Seit 2023 lebe ich in Rakovac an der Fruška Gora, bei Novi Sad.',
+  lead: 'Medienmanager und Unternehmer. Seit 1995 in der IT, seit 2000 in den Medien: Radio, Nachrichtenportale mit Millionenpublikum, heute KI-gestützte IT-Produkte. Seit 2023 lebe ich in Rakovac an der Fruška Gora, bei Novi Sad.',
   leadSecond: 'Hier ist alles versammelt: meine Arbeit, Projekte, die Investoren und Partner suchen, meine Websites und das, womit meine Frau und ich uns außerhalb der Arbeit beschäftigen.',
   ctaCv: 'Ausführlicher Lebenslauf',
   ctaContact: 'Schreiben Sie mir',
@@ -89,7 +89,7 @@ export default {
   cv: {
     title: 'Lebenslauf',
     metaTitle: 'Konstantin Stein — Lebenslauf',
-    lead: 'CEO, Gründer und Medienmanager. Seit 1995 in der IT, seit 1998 in den Medien, Erfahrung in der Unternehmensführung in fünf Ländern.',
+    lead: 'CEO, Gründer und Medienmanager. Seit 1995 in der IT, seit 2000 in den Medien, Erfahrung in der Unternehmensführung in fünf Ländern.',
     strengths: 'Was ich gut kann',
     strengthsList: [
       'Ich baue schnell starke Teams auf und führe sie zum Ziel.',
