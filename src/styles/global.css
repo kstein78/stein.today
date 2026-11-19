@@ -51,10 +51,11 @@ a:hover { color: var(--bermet); text-decoration-color: currentColor; }
 
 /* ——— шапка ——— */
 .top {
-  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem 2rem; flex-wrap: wrap;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem 2rem; flex-wrap: wrap;
   padding-block: 1.1rem; font-family: var(--sans); font-size: 0.95rem;
 }
-.top .home { font-weight: 650; text-decoration: none; letter-spacing: -0.01em; }
+.top .home { font-weight: 650; text-decoration: none; letter-spacing: -0.01em; display: inline-flex; align-items: center; gap: 0.55rem; }
+.top .home img { width: 22px; height: auto; display: block; }
 .top nav { display: flex; gap: 0.3rem 1.3rem; flex-wrap: wrap; }
 .top nav a { text-decoration: none; color: var(--ink-soft); }
 .top nav a:hover { color: var(--bermet); }

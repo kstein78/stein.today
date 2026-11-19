@@ -31,6 +31,8 @@ const built = new Date().toISOString().slice(0, 10);
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#eef1ea" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org', '@type': 'Person', name: 'Konstantin Stein',
     alternateName: ['Константин Штейн', 'Konstantin Štajn', 'Константин Штајн', 'Kosta Stein'],
@@ -45,7 +47,7 @@ const built = new Date().toISOString().slice(0, 10);
 <body>
   <a class="skip" href="#main">{t.skip}</a>
   <header class="wrap top">
-    <a class="home" href={`/${lang}/`}>{t.name}</a>
+    <a class="home" href={`/${lang}/`}><img src="/logo.svg" alt="" width="22" height="26" />{t.name}</a>
     <nav aria-label={t.navAria}>
       <a href={`/${lang}/#help`}>{t.nav.help}</a>
       <a href={`/${lang}/#work`}>{t.nav.work}</a>
