@@ -164,7 +164,7 @@ export const earlier: Record<Lang, [string, string][]> = {
     ['2006 — 2010', 'Одесса: работа и учёба в брендинговом агентстве MOTTO. Запустил сайт политической ассоциации и сайт историка Марка Солонина.'],
     ['1998, 2000 — 2006', 'Радио: работал на разных должностях — от ведущего эфира, автора радиопрограмм и звукорежиссёра до руководителя продакшн-студии группы из пяти радиостанций и одного телеканала.'],
     ['1998 — 2000', 'Основал и вёл туристическое агентство.'],
-    ['1995 — 1997', 'Начинал рок-диджеем в ночных клубах, потом ведущий и звукорежиссёр.'],
+    ['1995', 'ОАО «Свердловэнерго»: инженер-программист 2-й категории и переводчик технической литературы на внедрении SAP R/3, параллельно с учёбой в УПИ.'],
   ],
   en: [
     ['11.2012 — 2014', 'Commercial and creative director of the Komsomolskaya Pravda branch in Yekaterinburg.'],
@@ -173,7 +173,7 @@ export const earlier: Record<Lang, [string, string][]> = {
     ['2006 — 2010', 'Odesa: worked and studied at the MOTTO branding agency. Launched websites for a political association and for historian Mark Solonin.'],
     ['1998, 2000 — 2006', 'Radio: worked in many roles, from on-air host, radio programme author and sound engineer to head of the production studio for a group of five radio stations and one TV channel.'],
     ['1998 — 2000', 'Founded and ran a travel agency.'],
-    ['1995 — 1997', 'Started as a rock DJ in nightclubs, then worked as a host and sound engineer.'],
+    ['1995', 'Sverdlovenergo: software engineer (2nd grade) and translator of technical documentation for the SAP R/3 rollout, while studying at UPI.'],
   ],
   sr: [
     ['11.2012 — 2014', 'Komercijalni i kreativni direktor ogranka „Komsomolske pravde“ u Jekaterinburgu.'],
@@ -182,7 +182,7 @@ export const earlier: Record<Lang, [string, string][]> = {
     ['2006 — 2010', 'Odesa: rad i učenje u agenciji za brending MOTTO. Pokrenuo sajt jedne političke asocijacije i sajt istoričara Marka Solonjina.'],
     ['1998, 2000 — 2006', 'Radio: radio na različitim pozicijama — od voditelja programa, autora radio emisija i ton-majstora do rukovodioca produkcijskog studija grupe od pet radio stanica i jednog TV kanala.'],
     ['1998 — 2000', 'Osnovao i vodio turističku agenciju.'],
-    ['1995 — 1997', 'Počeo kao rok didžej u noćnim klubovima, zatim voditelj i ton-majstor.'],
+    ['1995', 'Sverdlovenergo: inženjer-programer druge kategorije i prevodilac tehničke literature na uvođenju sistema SAP R/3, uporedo sa studijama na UPI.'],
   ],
   de: [
     ['11.2012 — 2014', 'Kaufmännischer und Kreativdirektor der Filiale der „Komsomolskaja Prawda“ in Jekaterinburg.'],
@@ -191,7 +191,7 @@ export const earlier: Record<Lang, [string, string][]> = {
     ['2006 — 2010', 'Odessa: Arbeit und Weiterbildung in der Branding-Agentur MOTTO. Websites für eine politische Vereinigung und für den Historiker Mark Solonin gestartet.'],
     ['1998, 2000 — 2006', 'Radio: verschiedene Positionen, vom Moderator, Autor von Radiosendungen und Tontechniker bis zum Leiter des Produktionsstudios einer Gruppe von fünf Radiosendern und einem TV-Sender.'],
     ['1998 — 2000', 'Gründung und Leitung eines Reisebüros.'],
-    ['1995 — 1997', 'Start als Rock-DJ in Nachtclubs, danach Moderator und Tontechniker.'],
+    ['1995', 'Sverdlovenergo: Softwareingenieur (2. Kategorie) und Übersetzer technischer Dokumentation bei der Einführung von SAP R/3, parallel zum Studium am UPI.'],
   ],
 };
 

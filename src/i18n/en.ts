@@ -9,7 +9,7 @@ export default {
   skip: 'Skip to content',
   navAria: 'Sections',
   nav: { help: 'How I help', work: 'Work', invest: 'Projects', sites: 'Websites', hobby: 'Passions', contact: 'Contact' },
-  lead: 'Media executive and entrepreneur. In media since 1995: radio, news sites with audiences in the millions, and now AI-powered IT products. Since 2023 I live in Rakovac on Fruška Gora, near Novi Sad.',
+  lead: 'Media executive and entrepreneur. In IT since 1995, in media since 1998 and full-time since 2000: radio, news sites with audiences in the millions, and now AI-powered IT products. Since 2023 I live in Rakovac on Fruška Gora, near Novi Sad.',
   leadSecond: 'Everything is here: my work, projects that need investors and partners, my websites, and what my wife and I do outside work.',
   ctaCv: 'Full CV',
   ctaContact: 'Get in touch',
@@ -41,7 +41,7 @@ export default {
     moveText: 'I moved here in 2023 and often explain to friends how things work: which documents to prepare, which bank to go to, where to start. This is shared experience, not legal advice.',
   },
   workTitle: 'Work',
-  workIntro: 'Thirty years between the newsroom, the studio and the boardroom. I build teams, launch products and take them to revenue.',
+  workIntro: 'More than a quarter of a century between the newsroom, the studio and the boardroom. I build teams, launch products and take them to revenue.',
   workMore: 'Full CV: experience, numbers, education, languages',
   investTitle: 'Projects looking for investors and partners',
   investIntro: 'Prototypes and plans are ready. I am looking for people who can help take them to market with capital, connections or expertise.',
@@ -89,7 +89,7 @@ export default {
   cv: {
     title: 'CV',
     metaTitle: 'Konstantin Stein — CV',
-    lead: 'CEO, founder and media executive. In media and IT since 1995, with business management experience in five countries.',
+    lead: 'CEO, founder and media executive. In IT since 1995 and in media since 1998, with business management experience in five countries.',
     strengths: 'What I do well',
     strengthsList: [
       'I build strong teams quickly and lead them to the goal.',
