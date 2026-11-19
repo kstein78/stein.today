@@ -219,3 +219,5 @@ a:hover { color: var(--bermet); text-decoration-color: currentColor; }
 .cv-head h1 { margin-top: 0; }
 @media (max-width: 560px) { .cv-head { grid-template-columns: 5rem minmax(0, 1fr); } .cv-head img { width: 5rem; height: 5rem; } }
 @media print { .cv-head img { width: 26mm; height: 26mm; } }
+
+.job-links { display: flex; flex-wrap: wrap; gap: 0.2rem 1.1rem; font-family: var(--sans); font-size: 0.9rem; margin-top: 0.45rem !important; }

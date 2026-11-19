@@ -52,6 +52,7 @@ const topJobs = jobs.filter((j) => !j.cvOnly).slice(0, 4);
                 <strong>{j.url ? <a href={j.url} rel="noopener">{j.t[lang].org ?? j.org}</a> : (j.t[lang].org ?? j.org)}</strong> — {j.t[lang].role}
                 <p>{j.t[lang].text}</p>
                 {j.t[lang].numbers && <ul class="numbers">{j.t[lang].numbers!.map((n) => <li>{n}</li>)}</ul>}
+                {j.links && <p class="job-links">{j.links.map((l) => <a href={typeof l.url === 'string' ? l.url : l.url[lang]} rel="noopener">{l.label[lang]}</a>)}</p>}
               </div>
             </li>
           ))}
