@@ -4,6 +4,8 @@ import type { Lang } from './content';
 export interface Job {
   /** true — только в резюме, не на главной */
   cvOnly?: boolean;
+  /** Ссылки под описанием; url может быть свой для каждого языка сайта */
+  links?: { label: Record<Lang, string>; url: string | Record<Lang, string> }[];
   years: string;
   org: string;
   url?: string;
@@ -18,21 +20,30 @@ export const jobs: Job[] = [
     t: {
       ru: {
         role: 'CEO и основатель',
-        text: 'IT-компания в Нови-Саде, делает продукты с ИИ. TruckNetz.de — помощь на дороге для водителей грузовиков в Германии: больше 40 локализованных сайтов за три месяца, в мае 2026 года запущено мобильное приложение для трекинга и диспетчеризации. optilife.rs — прототип сервиса для управления коммунальными счетами.',
+        text: 'IT-компания в Нови-Саде, делает продукты с ИИ. TruckNetz.de — помощь на дороге для водителей грузовиков в Германии: больше 40 локализованных сайтов за три месяца, в мае 2026 года запущено мобильное приложение для трекинга и диспетчеризации. Optilife Utility Tracker — прототип сервиса, который помогает следить за коммунальными счетами и экономить на них.',
       },
       en: {
         role: 'CEO and founder',
-        text: 'An IT company in Novi Sad building AI-powered products. TruckNetz.de, roadside assistance for heavy-truck drivers in Germany: more than 40 localised websites rolled out in three months, and a mobile tracking and dispatch app launched in May 2026. optilife.rs: a prototype service for managing utility bills.',
+        text: 'An IT company in Novi Sad building AI-powered products. TruckNetz.de, roadside assistance for heavy-truck drivers in Germany: more than 40 localised websites rolled out in three months, and a mobile tracking and dispatch app launched in May 2026. Optilife Utility Tracker: a prototype service that helps people track their utility bills and save on them.',
       },
       sr: {
         role: 'CEO i osnivač',
-        text: 'IT kompanija iz Novog Sada koja razvija proizvode sa veštačkom inteligencijom. TruckNetz.de — pomoć na putu za vozače kamiona u Nemačkoj: više od 40 lokalizovanih sajtova za tri meseca, a u maju 2026. pokrenuta je mobilna aplikacija za praćenje i dispečing. optilife.rs — prototip servisa za upravljanje računima za komunalije.',
+        text: 'IT kompanija iz Novog Sada koja razvija proizvode sa veštačkom inteligencijom. TruckNetz.de — pomoć na putu za vozače kamiona u Nemačkoj: više od 40 lokalizovanih sajtova za tri meseca, a u maju 2026. pokrenuta je mobilna aplikacija za praćenje i dispečing. Optilife Utility Tracker — prototip servisa koji pomaže da pratite račune za komunalije i uštedite na njima.',
       },
       de: {
         role: 'CEO und Gründer',
-        text: 'IT-Unternehmen in Novi Sad, das KI-gestützte Produkte entwickelt. TruckNetz.de, Pannenhilfe für Lkw-Fahrer in Deutschland: mehr als 40 lokalisierte Websites in drei Monaten ausgerollt, im Mai 2026 Launch der mobilen Tracking- und Dispatch-App. optilife.rs: Prototyp eines Dienstes zur Verwaltung von Nebenkostenabrechnungen.',
+        text: 'IT-Unternehmen in Novi Sad, das KI-gestützte Produkte entwickelt. TruckNetz.de, Pannenhilfe für Lkw-Fahrer in Deutschland: mehr als 40 lokalisierte Websites in drei Monaten ausgerollt, im Mai 2026 Launch der mobilen Tracking- und Dispatch-App. Optilife Utility Tracker: Prototyp eines Dienstes, mit dem man Nebenkostenabrechnungen im Blick behält und spart.',
       },
     },
+    links: [
+      { label: { ru: 'optilife.rs — сайт компании', en: 'optilife.rs — company website', sr: 'optilife.rs — sajt kompanije', de: 'optilife.rs — Unternehmenswebsite' }, url: 'https://optilife.rs' },
+      { label: { ru: 'trucknetz.de', en: 'trucknetz.de', sr: 'trucknetz.de', de: 'trucknetz.de' }, url: 'https://trucknetz.de' },
+      {
+        label: { ru: 'Прототип трекера счетов', en: 'Utility tracker prototype', sr: 'Prototip praćenja računa', de: 'Prototyp des Nebenkosten-Trackers' },
+        // У трекера нет немецкой версии — немецкая страница ведёт на английскую
+        url: { ru: 'https://welcome.optilife.house/ru/', en: 'https://welcome.optilife.house/en', sr: 'https://welcome.optilife.house/sr_Latn/', de: 'https://welcome.optilife.house/en' },
+      },
+    ],
   },
   {
     cvOnly: true,
