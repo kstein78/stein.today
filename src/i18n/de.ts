@@ -67,6 +67,25 @@ export default {
   back: 'Zur Startseite',
   footer: 'Aktualisiert',
   langName: 'Deutsch',
+  coa: {
+    footerLink: 'Das Wappen im Logo',
+    title: 'Das Wappen im Logo',
+    metaTitle: 'Das Wappen von Stein und die Familiengeschichte — Konstantin Stein',
+    metaDesc: 'Woher das Logo von stein.today stammt: das Wappen der Familie von Stein auf einem Blatt aus der Sammlung von Konstantin Stein. Und kurz zur Erforschung der Familiengeschichte.',
+    lead: 'Das Logo dieser Website ist nach dem Wappen der Familie von Stein gezeichnet. Das Blatt stammt aus meiner Sammlung und hängt bei mir an der Wand.',
+    photoAlt: 'Wappen von Stein: blauer Schild mit goldenem gekröntem Hirschkopf und drei Sternen, mit Helm, Helmdecke und Helmzier',
+    photoCaption: 'Wappen von Stein. Vermerk unten: „Schwed. A. 30. 9. 1653“ — demnach schwedischer Adel, verliehen am 30. September 1653.',
+    logoTitle: 'Wie das Logo entstanden ist',
+    logoText: [
+      'Für das Logo habe ich nur den Schild übernommen: blaues Feld, goldener Hirschkopf unter einer Krone und drei goldene Sterne. Helm, Helmdecke und die Helmzier mit Flügeln und Schwert verschwimmen in kleiner Größe zu einem Fleck, deshalb fehlen sie im Logo.',
+      'Schild und Sterne sind neu gezeichnet, der Hirschkopf wurde nach dem Stich nachgezeichnet und symmetrisch gemacht. Dieselben Farben trägt das Website-Symbol im Browser-Tab.',
+    ],
+    familyTitle: 'Familiengeschichte',
+    familyText: [
+      'Ich erforsche die Geschichte meiner Familie, so wie es vor mir mein Vater und meine Großmutter getan haben. Ich suche Dokumente in Archiven mehrerer Länder und setze die Familienlinien wieder zusammen.',
+    ],
+    familyMore: 'Über meinen Großvater und seine Übersetzung der „Eneïda“: siehe Regionalgeschichte',
+  },
   cv: {
     title: 'Lebenslauf',
     metaTitle: 'Konstantin Stein — Lebenslauf',

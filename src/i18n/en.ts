@@ -67,6 +67,25 @@ export default {
   back: 'Back to home',
   footer: 'Last updated',
   langName: 'English',
+  coa: {
+    footerLink: 'The coat of arms in the logo',
+    title: 'The coat of arms in the logo',
+    metaTitle: 'The von Stein coat of arms and family history — Konstantin Stein',
+    metaDesc: 'Where the stein.today logo comes from: the von Stein coat of arms on a print from Konstantin Stein’s collection. And a few words about researching family history.',
+    lead: 'The logo of this site is drawn after the coat of arms of the von Stein family. This print is from my collection; it hangs on my wall.',
+    photoAlt: 'The von Stein coat of arms: a blue shield with a gold crowned stag’s head and three stars, with helmet, mantling and crest',
+    photoCaption: 'The von Stein coat of arms. The note at the bottom reads “Schwed. A. 30. 9. 1653”, which suggests Swedish nobility granted on 30 September 1653.',
+    logoTitle: 'How the logo was made',
+    logoText: [
+      'The logo uses the shield only: a blue field with a gold crowned stag’s head and three gold stars. At small sizes the helmet, mantling and the crest with wings and a sword blur into a blot, so they are left out.',
+      'The shield and stars were redrawn, and the stag’s head was traced from the engraving and made symmetrical. The same colours are in the site icon in your browser tab.',
+    ],
+    familyTitle: 'Family history',
+    familyText: [
+      'I research the history of my family, as my father and my grandmother did before me. I look for documents in archives in several countries and piece the family lines back together.',
+    ],
+    familyMore: 'About my grandfather and his translation of the “Eneida”: see Local history',
+  },
   cv: {
     title: 'CV',
     metaTitle: 'Konstantin Stein — CV',

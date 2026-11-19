@@ -222,3 +222,15 @@ a:hover { color: var(--bermet); text-decoration-color: currentColor; }
 @media print { .cv-head img { width: 26mm; height: 26mm; } }
 
 .job-links { display: flex; flex-wrap: wrap; gap: 0.2rem 1.1rem; font-family: var(--sans); font-size: 0.9rem; margin-top: 0.45rem !important; }
+
+/* ——— страница герба ——— */
+.coa-sheet { margin: 2rem 0 2.6rem; }
+.coa-sheet img { display: block; width: 100%; max-width: 34rem; height: auto; margin: 0 auto; border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(21, 41, 46, 0.12), 0 12px 32px -12px rgba(21, 41, 46, 0.35); }
+.coa-sheet figcaption { font-family: var(--sans); font-size: 0.9rem; color: var(--ink-soft); max-width: 34rem; margin: 0.9rem auto 0; text-align: center; }
+.coa h2 { font-size: var(--s2); margin: 0 0 0.6rem; font-weight: 680; }
+.coa section { margin-top: 2.4rem; }
+.coa-logo { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: 1.4rem; align-items: start; }
+.coa-logo img { width: 5.5rem; height: auto; }
+@media (max-width: 560px) { .coa-logo { grid-template-columns: 3.5rem minmax(0, 1fr); } .coa-logo img { width: 3.5rem; } }
+.foot a { color: inherit; }

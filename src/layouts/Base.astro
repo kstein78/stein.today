@@ -64,7 +64,7 @@ const built = new Date().toISOString().slice(0, 10);
   </header>
   <main id="main"><slot /></main>
   <footer class="wrap foot">
-    <span>© {new Date().getFullYear()} {t.name}</span>
+    <span>© {new Date().getFullYear()} {t.name} · <a href={`/${lang}/coat-of-arms/`}>{t.coa.footerLink}</a></span>
     <span>{t.footer}: {built}</span>
   </footer>
 </body>
