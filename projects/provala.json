@@ -3,15 +3,15 @@
   "slug": "provala",
   "group": "site",
   "status": "live",
-  "url": null,
+  "url": "https://provala.rs",
   "t": {
     "ru": {
       "title": "Озеро Провала",
-      "summary": "Сайт об озере Провала у Вайски. Оно появилось в 1924 году, когда большое половодье Дуная прорвало насыпь."
+      "summary": "Независимый сайт об озере Провала у Вайски — самом глубоком озере Воеводины, до 19 метров. Озеро появилось, когда в половодье Дунай прорвал насыпь: по разным источникам, в 1924 или 1926 году."
     },
     "en": {
       "title": "Lake Provala",
-      "summary": "A website about Lake Provala near Vajska. The lake formed in 1924, when a major Danube flood broke through the embankment."
+      "summary": "An independent website about Lake Provala near Vajska, the deepest lake in Vojvodina at up to 19 metres. It formed when the flooding Danube broke through an embankment, in 1924 or 1926 depending on the source."
     }
   }
 }

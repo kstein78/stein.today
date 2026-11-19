@@ -3,55 +3,15 @@
   "slug": "pricey",
   "group": "invest",
   "status": "seeking",
-  "url": "https://pricey.world",
+  "url": null,
   "t": {
     "ru": {
       "title": "Pricey и Wishera",
-      "summary": "Два связанных продукта в люксовой социальной коммерции: Pricey — личная витрина вещей, Wishera — социальный вишлист. Прототип работает, ищем инвестора.",
-      "body": [
-        "Pricey (pricey.world) — личная витрина в люксовом сегменте.",
-        "Wishera — социальный вишлист.",
-        "Это два бренда одной платформы социальной коммерции. Есть работающий прототип и презентации для инвесторов на русском и английском.",
-        "Ищу инвестора для запуска на рынок. Презентацию пришлю по запросу."
-      ],
-      "facts": [
-        [
-          "Стадия",
-          "работающий прототип"
-        ],
-        [
-          "Нужно",
-          "инвестиции на запуск"
-        ],
-        [
-          "Материалы",
-          "питч-деки RU и EN"
-        ]
-      ]
+      "summary": "Два бренда одной платформы в люксовой социальной коммерции: Pricey — личная витрина, Wishera — социальный вишлист. Прототип работает, ищу инвестора, презентацию пришлю по запросу."
     },
     "en": {
       "title": "Pricey and Wishera",
-      "summary": "Two connected products in luxury social commerce: Pricey is a personal showcase of things, Wishera is a social wishlist. Working prototype, looking for an investor.",
-      "body": [
-        "Pricey (pricey.world) is a personal showcase in the luxury segment.",
-        "Wishera is a social wishlist.",
-        "They are two brands of one social commerce platform. A working prototype is live, and investor decks exist in English and Russian.",
-        "I am looking for an investor to take it to market. Deck available on request."
-      ],
-      "facts": [
-        [
-          "Stage",
-          "working prototype"
-        ],
-        [
-          "Needs",
-          "launch funding"
-        ],
-        [
-          "Materials",
-          "pitch decks in EN and RU"
-        ]
-      ]
+      "summary": "Two brands of one luxury social commerce platform: Pricey is a personal showcase, Wishera is a social wishlist. Working prototype; looking for an investor; deck on request."
     }
   }
 }

@@ -3,15 +3,15 @@
   "slug": "vajska",
   "group": "site",
   "status": "live",
-  "url": null,
+  "url": "https://vajska.rs",
   "t": {
     "ru": {
       "title": "Вайска",
-      "summary": "Сайт села Вайска в общине Бач, у Дуная. К Вайске относятся и соседние Лабудняча и Жива."
+      "summary": "Независимый сайт о селе Вайска в общине Бач, у Дуная: новости, история, праздники, как добраться. Языки: сербский, хорватский, английский, русский."
     },
     "en": {
       "title": "Vajska",
-      "summary": "The website of Vajska, a village in the Bač municipality by the Danube. The nearby settlements of Labudnjača and Živa are officially part of it."
+      "summary": "An independent website about Vajska, a Danube village in the Bač municipality: news, history, festivals and how to get there. In Serbian, Croatian, English and Russian."
     }
   }
 }

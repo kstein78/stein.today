@@ -10,7 +10,7 @@ export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang 
 const lang = Astro.params.lang as Lang;
 const t = ui[lang];
 const statuses: Status[] = ['live', 'seeking', 'collection', 'archive', 'planned'];
-const topJobs = jobs.slice(0, 4);
+const topJobs = jobs.filter((j) => !j.cvOnly).slice(0, 4);
 ---
 <Base lang={lang} title={t.metaTitle} description={t.metaDesc} path="">
   <div class="wrap">
@@ -37,7 +37,7 @@ const topJobs = jobs.slice(0, 4);
         <ol class="timeline">
           {topJobs.map((j) => (
             <li>
-              <span class="yr">{j.years}</span>
+              <span class="yr">{j.t[lang].years ?? j.years}</span>
               <div>
                 <strong>{j.url ? <a href={j.url} rel="noopener">{j.t[lang].org ?? j.org}</a> : (j.t[lang].org ?? j.org)}</strong> — {j.t[lang].role}
                 <p>{j.t[lang].text}</p>

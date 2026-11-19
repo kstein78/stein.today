@@ -174,12 +174,23 @@ export const ui = {
 
 /** Карьера. Цифры — дословно со stein-1.com (проверено 19.11.2026). */
 export interface Job {
+  /** true — показывать только в резюме, не на главной */
+  cvOnly?: boolean;
   years: string;
   org: string;
   url?: string;
-  t: Record<Lang, { org?: string; role: string; text: string; numbers?: string[] }>;
+  t: Record<Lang, { years?: string; org?: string; role: string; text: string; numbers?: string[] }>;
 }
 export const jobs: Job[] = [
+  {
+    cvOnly: true,
+    years: 'сейчас',
+    org: 'ADSBase',
+    t: {
+      ru: { years: 'сейчас', role: 'в штате', text: 'Медиагруппа в сфере аффилиат-маркетинга.' },
+      en: { years: 'now', role: 'staff role', text: 'An affiliate marketing media group.' },
+    },
+  },
   {
     years: '2024 —',
     org: 'Optilife',
@@ -273,11 +284,11 @@ export const earlier: Record<Lang, [string, string][]> = {
 
 export const education: Record<Lang, string[]> = {
   ru: [
-    'Вена, Австрия, 1990–1994: школы, в том числе иезуитский колледж Kalksburg.',
+    'Вена, Австрия, 1990–1993 и несколько месяцев 1994 года: школы, в том числе иезуитский колледж Kalksburg.',
     'Уральский государственный технический университет (УПИ): информатика.',
   ],
   en: [
-    'Vienna, Austria, 1990–1994: schools including the Jesuit college Kalksburg.',
+    'Vienna, Austria, 1990–1993 and a few months of 1994: schools including the Jesuit college Kalksburg.',
     'Ural State Technical University (UPI): computer science.',
   ],
 };
@@ -289,6 +300,7 @@ export const languages: Record<Lang, [string, string][]> = {
     ['Английский', 'B2, рабочий'],
     ['Сербский', 'разговорный'],
     ['Украинский', 'разговорный'],
+    ['Грузинский', 'базовый'],
   ],
   en: [
     ['Russian', 'native'],
@@ -296,6 +308,7 @@ export const languages: Record<Lang, [string, string][]> = {
     ['English', 'B2, working'],
     ['Serbian', 'conversational'],
     ['Ukrainian', 'conversational'],
+    ['Georgian', 'basic'],
   ],
 };
 

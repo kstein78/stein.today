@@ -21,7 +21,7 @@ const c = t.cv;
     <ol class="timeline">
       {jobs.map((j) => (
         <li>
-          <span class="yr">{j.years}</span>
+          <span class="yr">{j.t[lang].years ?? j.years}</span>
           <div>
             <strong>{j.url ? <a href={j.url} rel="noopener">{j.t[lang].org ?? j.org}</a> : (j.t[lang].org ?? j.org)}</strong> — {j.t[lang].role}
             <p>{j.t[lang].text}</p>
