@@ -1,0 +1,93 @@
+---
+import Base from '../../layouts/Base.astro';
+import Portrait from '../../components/Portrait.astro';
+import Symbol from '../../components/Symbol.astro';
+import Row from '../../components/Row.astro';
+import Contacts from '../../components/Contacts.astro';
+import { ui, LANGS, jobs, itemsBy, type Lang, type Status } from '../../data/content';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+const t = ui[lang];
+const statuses: Status[] = ['live', 'seeking', 'collection', 'archive', 'planned'];
+const topJobs = jobs.filter((j) => !j.cvOnly).slice(0, 4);
+---
+<Base lang={lang} title={t.metaTitle} description={t.metaDesc} path="">
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <h1>{t.name}</h1>
+        <p class="alt">{t.nameAlt}</p>
+        <p class="lead">{t.lead}</p>
+        <p class="lead2">{t.leadSecond}</p>
+        <div class="actions">
+          <a class="btn primary" href={`/${lang}/cv/`}>{t.ctaCv}</a>
+          <a class="btn" href="#contact">{t.ctaContact}</a>
+        </div>
+      </div>
+      <Portrait lang={lang} />
+    </section>
+
+    <section class="section help" id="help">
+      <header><h2>{t.help.title}</h2><p>{t.help.intro}</p></header>
+      <div>
+        <ul class="help-grid">
+          {t.help.items.map((h) => <li><h3>{h.title}</h3><p>{h.text}</p></li>)}
+        </ul>
+        <div class="help-extra">
+          <div class="ev"><h3>{t.help.evTitle}</h3><p>{t.help.evText}</p></div>
+          <div class="move"><h3>{t.help.moveTitle}</h3><p>{t.help.moveText}</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <header><h2>{t.workTitle}</h2><p>{t.workIntro}</p></header>
+      <div>
+        <ol class="timeline">
+          {topJobs.map((j) => (
+            <li>
+              <span class="yr">{j.t[lang].years ?? j.years}</span>
+              <div>
+                <strong>{j.url ? <a href={j.url} rel="noopener">{j.t[lang].org ?? j.org}</a> : (j.t[lang].org ?? j.org)}</strong> — {j.t[lang].role}
+                <p>{j.t[lang].text}</p>
+                {j.t[lang].numbers && <ul class="numbers">{j.t[lang].numbers!.map((n) => <li>{n}</li>)}</ul>}
+              </div>
+            </li>
+          ))}
+        </ol>
+        <a class="btn" href={`/${lang}/cv/`}>{t.workMore}</a>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <header>
+        <h2>{t.investTitle}</h2><p>{t.investIntro}</p>
+        <ul class="legend" aria-label={t.legendTitle}>
+          {statuses.map((s) => <li><Symbol status={s} inline size={14} />{t.legend[s]}</li>)}
+        </ul>
+      </header>
+      <ul class="rows">{itemsBy('invest').map((it) => <Row item={it} lang={lang} />)}</ul>
+    </section>
+
+    <section class="section" id="sites">
+      <header><h2>{t.sitesTitle}</h2><p>{t.sitesIntro}</p></header>
+      <ul class="rows">{itemsBy('site').map((it) => <Row item={it} lang={lang} />)}</ul>
+    </section>
+
+    <section class="section" id="passions">
+      <header><h2>{t.hobbyTitle}</h2><p>{t.hobbyIntro}</p></header>
+      <ul class="rows">{itemsBy('hobby').map((it) => <Row item={it} lang={lang} />)}</ul>
+    </section>
+
+    <section class="section" id="about">
+      <header><h2>{t.aboutTitle}</h2></header>
+      <ul class="facts-about">{t.about.map((a) => <li>{a}</li>)}</ul>
+    </section>
+
+    <section class="section" id="contact">
+      <header><h2>{t.contactTitle}</h2><p>{t.contactIntro}</p></header>
+      <Contacts lang={lang} />
+    </section>
+  </div>
+</Base>

@@ -1,0 +1,25 @@
+{
+  "order": 130,
+  "slug": "antiques",
+  "group": "hobby",
+  "status": "collection",
+  "url": "https://divno.rs",
+  "t": {
+    "ru": {
+      "title": "Антиквариат и барахолки",
+      "summary": "Выходные на барахолках Воеводины, старые чердаки и разговоры с коллекционерами. Для этой среды я сделал divno.rs."
+    },
+    "en": {
+      "title": "Antiques and flea markets",
+      "summary": "Weekends at Vojvodina’s flea markets, old attics and long talks with collectors. I built divno.rs for this world."
+    },
+    "sr": {
+      "title": "Antikviteti i buvljaci",
+      "summary": "Vikendi na buvljacima Vojvodine, stari tavani i dugi razgovori sa kolekcionarima. Za taj svet sam napravio divno.rs."
+    },
+    "de": {
+      "title": "Antiquitäten und Flohmärkte",
+      "summary": "Wochenenden auf den Flohmärkten der Vojvodina, alte Dachböden und lange Gespräche mit Sammlern. Für diese Welt habe ich divno.rs gebaut."
+    }
+  }
+}

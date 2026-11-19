@@ -1,0 +1,105 @@
+{
+  "order": 50,
+  "slug": "divno",
+  "group": "site",
+  "status": "live",
+  "url": "https://divno.rs",
+  "t": {
+    "ru": {
+      "title": "divno.rs",
+      "summary": "Площадка для антиквариата, винтажа и обмена по Сербии и бывшей Югославии. Без комиссий и платных поднятий.",
+      "body": [
+        "divno — место, где покупают, продают и меняют старые вещи: мебель, керамику, игрушки, часы, книги, монеты, пластинки.",
+        "Можно попросить охотников с барахолок найти нужную вещь, а экспертов — подсказать, что это за предмет и сколько он стоит. За полезную помощь начисляются «дукаты» — репутация, по которой видно, кому можно доверять.",
+        "Объявление можно разместить на сайте, через Telegram-бота или ссылкой на KupujemProdajem, Kupindo и eBay. Пять языков: сербский (латиница и кириллица), русский, английский, немецкий.",
+        "Восьмиконечная звезда в логотипе — из узоров пиротских ковров, которые внесены в список нематериального наследия Сербии."
+      ],
+      "facts": [
+        [
+          "Комиссия",
+          "нет"
+        ],
+        [
+          "Языки",
+          "5"
+        ],
+        [
+          "География",
+          "Сербия и бывшая Югославия"
+        ]
+      ]
+    },
+    "en": {
+      "title": "divno.rs",
+      "summary": "A marketplace for antiques, vintage and swaps across Serbia and the former Yugoslavia. No commissions, no paid boosts.",
+      "body": [
+        "divno is where people buy, sell and swap old things: furniture, ceramics, toys, watches, books, coins and records.",
+        "You can ask flea-market hunters to find a specific item, or ask experts what an object is and what it is worth. Helpful work earns “dukati”, a reputation score that shows who can be trusted.",
+        "Listings can be posted on the site, through a Telegram bot, or by linking to KupujemProdajem, Kupindo or eBay. Five languages: Serbian (Latin and Cyrillic), Russian, English and German.",
+        "The eight-pointed star in the logo comes from the patterns of Pirot carpets, which are on Serbia’s intangible cultural heritage list."
+      ],
+      "facts": [
+        [
+          "Commission",
+          "none"
+        ],
+        [
+          "Languages",
+          "5"
+        ],
+        [
+          "Region",
+          "Serbia and the former Yugoslavia"
+        ]
+      ]
+    },
+    "sr": {
+      "title": "divno.rs",
+      "summary": "Platforma za antikvitete, vintidž i razmenu u Srbiji i bivšoj Jugoslaviji. Bez provizija i plaćenih isticanja.",
+      "body": [
+        "divno je mesto gde se kupuju, prodaju i menjaju stare stvari: nameštaj, keramika, igračke, satovi, knjige, novac i ploče.",
+        "Možete zamoliti lovce sa buvljaka da pronađu određenu stvar, a stručnjake da kažu šta je predmet i koliko vredi. Za korisnu pomoć dobijaju se „dukati“ — reputacija po kojoj se vidi kome se može verovati.",
+        "Oglas se postavlja na sajtu, preko Telegram bota ili linkom na KupujemProdajem, Kupindo i eBay. Pet jezika: srpski (latinica i ćirilica), ruski, engleski, nemački.",
+        "Osmokraka zvezda u logotipu potiče iz šara pirotskog ćilima, koji je na listi nematerijalnog kulturnog nasleđa Srbije."
+      ],
+      "facts": [
+        [
+          "Provizija",
+          "nema"
+        ],
+        [
+          "Jezici",
+          "5"
+        ],
+        [
+          "Region",
+          "Srbija i bivša Jugoslavija"
+        ]
+      ]
+    },
+    "de": {
+      "title": "divno.rs",
+      "summary": "Ein Marktplatz für Antiquitäten, Vintage und Tausch in Serbien und dem ehemaligen Jugoslawien. Ohne Provisionen und ohne bezahlte Hervorhebungen.",
+      "body": [
+        "Auf divno werden alte Dinge gekauft, verkauft und getauscht: Möbel, Keramik, Spielzeug, Uhren, Bücher, Münzen und Schallplatten.",
+        "Man kann Flohmarkt-Jäger bitten, einen bestimmten Gegenstand zu finden, oder Experten fragen, was ein Objekt ist und was es wert ist. Hilfreiche Arbeit bringt „Dukaten“ — eine Reputation, an der man sieht, wem man vertrauen kann.",
+        "Inserate lassen sich auf der Website, über einen Telegram-Bot oder per Link zu KupujemProdajem, Kupindo und eBay einstellen. Fünf Sprachen: Serbisch (Latein- und Kyrillisch), Russisch, Englisch, Deutsch.",
+        "Der achtzackige Stern im Logo stammt aus den Mustern der Pirot-Teppiche, die auf der Liste des immateriellen Kulturerbes Serbiens stehen."
+      ],
+      "facts": [
+        [
+          "Provision",
+          "keine"
+        ],
+        [
+          "Sprachen",
+          "5"
+        ],
+        [
+          "Region",
+          "Serbien und das ehemalige Jugoslawien"
+        ]
+      ]
+    }
+  }
+}

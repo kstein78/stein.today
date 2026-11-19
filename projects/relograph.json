@@ -1,0 +1,97 @@
+{
+  "order": 20,
+  "slug": "relograph",
+  "group": "invest",
+  "status": "seeking",
+  "url": null,
+  "t": {
+    "ru": {
+      "title": "Relograph",
+      "summary": "Удобный интерфейс для ревью pull request’ов на GitHub: чтобы изменения в коде было легко читать и проверять. В активной разработке, открыт для инвесторов.",
+      "body": [
+        "Relograph — более читаемый интерфейс для ревью pull request’ов на GitHub.",
+        "Проект в активной разработке. Ищу инвестиции и первые команды, готовые попробовать."
+      ],
+      "facts": [
+        [
+          "Стадия",
+          "активная разработка"
+        ],
+        [
+          "Для кого",
+          "команды разработки на GitHub"
+        ],
+        [
+          "Нужно",
+          "инвестиции и пилотные команды"
+        ]
+      ]
+    },
+    "en": {
+      "title": "Relograph",
+      "summary": "A more readable interface for reviewing GitHub pull requests, so code changes are easy to read and check. In active development and open to investors.",
+      "body": [
+        "Relograph is a more readable interface for reviewing GitHub pull requests.",
+        "The project is in active development. I am looking for investment and for first teams willing to try it."
+      ],
+      "facts": [
+        [
+          "Stage",
+          "active development"
+        ],
+        [
+          "For",
+          "engineering teams on GitHub"
+        ],
+        [
+          "Needs",
+          "investment and pilot teams"
+        ]
+      ]
+    },
+    "sr": {
+      "title": "Relograph",
+      "summary": "Pregledniji interfejs za pregled pull requestova na GitHubu, da se izmene u kodu lako čitaju i proveravaju. U aktivnom razvoju i otvoren za investitore.",
+      "body": [
+        "Relograph je pregledniji interfejs za pregled pull requestova na GitHubu.",
+        "Projekat je u aktivnom razvoju. Tražim investiciju i prve timove spremne da ga isprobaju."
+      ],
+      "facts": [
+        [
+          "Faza",
+          "aktivan razvoj"
+        ],
+        [
+          "Za koga",
+          "razvojni timovi na GitHubu"
+        ],
+        [
+          "Potrebno",
+          "investicija i pilot-timovi"
+        ]
+      ]
+    },
+    "de": {
+      "title": "Relograph",
+      "summary": "Eine übersichtlichere Oberfläche für Reviews von Pull Requests auf GitHub, damit Code-Änderungen leicht zu lesen und zu prüfen sind. In aktiver Entwicklung und offen für Investoren.",
+      "body": [
+        "Relograph ist eine übersichtlichere Oberfläche für Reviews von Pull Requests auf GitHub.",
+        "Das Projekt ist in aktiver Entwicklung. Ich suche Investitionen und erste Teams, die es ausprobieren wollen."
+      ],
+      "facts": [
+        [
+          "Phase",
+          "aktive Entwicklung"
+        ],
+        [
+          "Für",
+          "Entwicklungsteams auf GitHub"
+        ],
+        [
+          "Gesucht",
+          "Investition und Pilot-Teams"
+        ]
+      ]
+    }
+  }
+}

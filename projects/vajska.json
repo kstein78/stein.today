@@ -1,0 +1,25 @@
+{
+  "order": 80,
+  "slug": "vajska",
+  "group": "site",
+  "status": "live",
+  "url": "https://vajska.rs",
+  "t": {
+    "ru": {
+      "title": "Вайска",
+      "summary": "Независимый сайт о селе Вайска в общине Бач, у Дуная: новости, история, праздники, как добраться. Языки: сербский, хорватский, английский, русский."
+    },
+    "en": {
+      "title": "Vajska",
+      "summary": "An independent website about Vajska, a Danube village in the Bač municipality: news, history, festivals and how to get there. In Serbian, Croatian, English and Russian."
+    },
+    "sr": {
+      "title": "Vajska",
+      "summary": "Nezavisni sajt o Vajskoj, podunavskom selu u opštini Bač: vesti, istorija, praznici i kako stići. Na srpskom, hrvatskom, engleskom i ruskom."
+    },
+    "de": {
+      "title": "Vajska",
+      "summary": "Eine unabhängige Website über Vajska, ein Donaudorf in der Gemeinde Bač: Nachrichten, Geschichte, Feste und Anreise. Auf Serbisch, Kroatisch, Englisch und Russisch."
+    }
+  }
+}

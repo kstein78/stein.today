@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import Symbol from '../../components/Symbol.astro';
+import Contacts from '../../components/Contacts.astro';
+import HeroMap from '../../components/HeroMap.astro';
+import { ui, LANGS, items, hasPage, type Lang, type Item } from '../../data/content';
+
+export function getStaticPaths() {
+  return LANGS.flatMap((lang) => items.filter(hasPage).map((item) => ({ params: { lang, slug: item.slug }, props: { item } })));
+}
+const lang = Astro.params.lang as Lang;
+const { item } = Astro.props as { item: Item };
+const t = ui[lang];
+const x = item.t[lang];
+const anchor = { invest: 'projects', site: 'sites', hobby: 'passions' }[item.group];
+const host = item.url ? item.url.replace(/^https?:\/\//, '').replace(/\/$/, '') : null;
+const askLabel = t.discuss;
+---
+<Base lang={lang} title={`${x.title} — ${t.name}`} description={x.summary} path={`${item.slug}/`}>
+  <article class="wrap page">
+    <a class="crumb" href={`/${lang}/#${anchor}`}>← {t.back}</a>
+    <div class="status"><Symbol status={item.status} inline size={14} />{t.legend[item.status]}</div>
+    <h1>{x.title}</h1>
+    <p class="summary">{x.summary}</p>
+    {item.slug === 'local-history' && <HeroMap lang={lang} />}
+    <div class="body">{(x.body ?? []).map((p) => <p>{p}</p>)}</div>
+    {x.facts && (
+      <dl class="facts">{x.facts.map(([k, v]) => <><dt>{k}</dt><dd>{v}</dd></>)}</dl>
+    )}
+    <div class="actions">
+      {item.url && <a class="btn primary" href={item.url} rel="noopener">{t.open}: {host}</a>}
+      {item.links?.filter((l) => l.url !== item.url).map((l) => <a class="btn" href={l.url} rel="noopener">{l.label}</a>)}
+      {item.status === 'seeking' && <a class="btn" href="https://t.me/k_stein" rel="noopener">{askLabel}</a>}
+    </div>
+    {item.status === 'seeking' && <section style="margin-top:3rem"><Contacts lang={lang} /></section>}
+  </article>
+</Base>

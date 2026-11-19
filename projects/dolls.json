@@ -1,0 +1,41 @@
+{
+  "order": 120,
+  "slug": "dolls",
+  "group": "hobby",
+  "status": "collection",
+  "url": "https://kuklalutka.com",
+  "t": {
+    "ru": {
+      "title": "Куклы",
+      "summary": "Собираем с женой антикварных и винтажных кукол — из бывшей Югославии, Германии, Австрии и не только. Мечтаем о выставках и своём музее.",
+      "body": [
+        "Коллекция выросла до полутора тысяч кукол. Больше всего нас интересуют вещи из бывшей Югославии, Германии и Австрии.",
+        "Цель — выставки, а потом и музей кукол. Часть коллекции можно посмотреть на kuklalutka.com."
+      ]
+    },
+    "en": {
+      "title": "Dolls",
+      "summary": "My wife and I collect antique and vintage dolls from the former Yugoslavia, Germany, Austria and beyond. We dream of exhibitions and a museum of our own.",
+      "body": [
+        "The collection has grown to some fifteen hundred dolls. We are most drawn to pieces from the former Yugoslavia, Germany and Austria.",
+        "The goal is exhibitions, and then a doll museum. Part of the collection is on kuklalutka.com."
+      ]
+    },
+    "sr": {
+      "title": "Lutke",
+      "summary": "Supruga i ja skupljamo antikne i vintidž lutke iz bivše Jugoslavije, Nemačke, Austrije i drugih zemalja. Sanjamo o izložbama i sopstvenom muzeju.",
+      "body": [
+        "Kolekcija je narasla do hiljadu i po lutaka. Najviše nas zanimaju predmeti iz bivše Jugoslavije, Nemačke i Austrije.",
+        "Cilj su izložbe, a zatim i muzej lutaka. Deo kolekcije je na kuklalutka.com."
+      ]
+    },
+    "de": {
+      "title": "Puppen",
+      "summary": "Meine Frau und ich sammeln antike und Vintage-Puppen aus dem ehemaligen Jugoslawien, Deutschland, Österreich und anderen Ländern. Wir träumen von Ausstellungen und einem eigenen Museum.",
+      "body": [
+        "Die Sammlung ist auf rund anderthalbtausend Puppen angewachsen. Am meisten interessieren uns Stücke aus dem ehemaligen Jugoslawien, Deutschland und Österreich.",
+        "Das Ziel sind Ausstellungen und danach ein Puppenmuseum. Ein Teil der Sammlung ist auf kuklalutka.com zu sehen."
+      ]
+    }
+  }
+}

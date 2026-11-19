@@ -1,0 +1,63 @@
+# stein.today: build on every push and PR; on main the ready site goes to branch "live".
+# The server (same one as rakovac.rs) pulls "live" every minute and switches to it
+# (github.com/kstein78/rakovac.rs → deploy/stein-update). No secrets needed: the repo is public.
+# Job "live" then waits until https://stein.today/version.txt shows this commit.
+name: build-and-deploy
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Check internal links
+        run: node tools/check-links.mjs
+      - name: Publish to branch "live"
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          printf '%s\n' "$GITHUB_SHA" > dist/version.txt
+          cd dist
+          git init -q -b live
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "Build of $GITHUB_SHA"
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" live
+          echo "branch live = build of $GITHUB_SHA"
+
+  live:
+    needs: build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Wait until stein.today serves this commit
+        run: |
+          url=https://stein.today/version.txt
+          get() { curl -fsS --max-time 15 "$url?t=$(date +%s%N)" 2>/dev/null | head -1 || true; }
+          for i in $(seq 1 40); do
+            live=$(get)
+            if [ "$live" = "$GITHUB_SHA" ]; then echo "stein.today is live with $live"; exit 0; fi
+            sleep 15
+          done
+          echo "::error::after 10 minutes stein.today serves '${live:-nothing}', not $GITHUB_SHA. On the server: tail /srv/rakovac/stein/update.log"
+          exit 1

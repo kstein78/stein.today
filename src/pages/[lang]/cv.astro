@@ -1,0 +1,51 @@
+---
+import Base from '../../layouts/Base.astro';
+import Contacts from '../../components/Contacts.astro';
+import { ui, LANGS, jobs, earlier, education, languages, type Lang } from '../../data/content';
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+const t = ui[lang];
+const c = t.cv;
+---
+<Base lang={lang} title={c.metaTitle} description={c.lead} path="cv/">
+  <article class="wrap page cv">
+    <a class="crumb" href={`/${lang}/`}>← {t.back}</a>
+    <div class="cv-head">
+      <img src="/photo-cv.jpg" alt={t.name} width="480" height="480" />
+      <div>
+        <h1>{t.name}</h1>
+        <p class="summary">{c.lead}</p>
+      </div>
+    </div>
+    <div class="actions no-print"><button class="btn" type="button" onclick="window.print()">{c.print}</button></div>
+
+    <h2>{c.strengths}</h2>
+    <ul class="plain">{c.strengthsList.map((s) => <li>{s}</li>)}</ul>
+
+    <h2>{c.experience}</h2>
+    <ol class="timeline">
+      {jobs.map((j) => (
+        <li>
+          <span class="yr">{j.t[lang].years ?? j.years}</span>
+          <div>
+            <strong>{j.url ? <a href={j.url} rel="noopener">{j.t[lang].org ?? j.org}</a> : (j.t[lang].org ?? j.org)}</strong> — {j.t[lang].role}
+            <p>{j.t[lang].text}</p>
+            {j.t[lang].numbers && <ul class="numbers">{j.t[lang].numbers!.map((n) => <li>{n}</li>)}</ul>}
+          </div>
+        </li>
+      ))}
+    </ol>
+
+    <h2>{c.earlier}</h2>
+    <ol class="timeline">{earlier[lang].map(([y, txt]) => <li><span class="yr">{y}</span><p>{txt}</p></li>)}</ol>
+
+    <h2>{c.education}</h2>
+    <ul class="plain">{education[lang].map((e) => <li>{e}</li>)}</ul>
+
+    <h2>{c.languages}</h2>
+    <dl class="lang-table">{languages[lang].map(([l, v]) => <><dt>{l}</dt><dd>{v}</dd></>)}</dl>
+
+    <h2>{t.contactTitle}</h2>
+    <Contacts lang={lang} />
+  </article>
+</Base>

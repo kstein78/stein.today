@@ -1,0 +1,25 @@
+{
+  "order": 10,
+  "slug": "pricey",
+  "group": "invest",
+  "status": "seeking",
+  "url": null,
+  "t": {
+    "ru": {
+      "title": "Pricey и Wishera",
+      "summary": "Два бренда одной платформы в люксовой социальной коммерции: Pricey — личная витрина, Wishera — социальный вишлист. Прототип работает, ищу инвестора, презентацию пришлю по запросу."
+    },
+    "en": {
+      "title": "Pricey and Wishera",
+      "summary": "Two brands of one luxury social commerce platform: Pricey is a personal showcase, Wishera is a social wishlist. Working prototype; looking for an investor; deck on request."
+    },
+    "sr": {
+      "title": "Pricey i Wishera",
+      "summary": "Dva brenda jedne platforme za luksuznu društvenu trgovinu: Pricey je lična vitrina, Wishera je društvena lista želja. Prototip radi, tražim investitora, prezentaciju šaljem na zahtev."
+    },
+    "de": {
+      "title": "Pricey und Wishera",
+      "summary": "Zwei Marken einer Social-Commerce-Plattform im Luxussegment: Pricey ist ein persönliches Schaufenster, Wishera eine soziale Wunschliste. Funktionierender Prototyp, Investor gesucht, Pitch-Deck auf Anfrage."
+    }
+  }
+}
