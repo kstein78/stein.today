@@ -31,6 +31,7 @@ export default {
     intro: 'Zbog čega mi se ljudi obraćaju — poslovno i ne samo poslovno.',
     items: [
       { title: 'Upravljanje u IT-u i medijima', text: 'Pokrećem i razvijam digitalne proizvode i medije: tim, sadržaj, saobraćaj, monetizacija. Od prototipa do milionske publike.' },
+      { title: 'Izlazak na međunarodna tržišta', text: 'Uvodim kompanije na tržišta drugih zemalja: tražim partnere i postavljam modele prodaje i saradnje koji funkcionišu. Tako sada radim sa 7pro8, radionicom luksuznih enterijera za automobile.' },
       { title: 'Rad sa klijentima i partnerima', text: 'Account menadžment, pregovori, partnerske mreže u različitim zemljama, ugovorni modeli koji donose profit.' },
       { title: 'Jezici i tržišta', text: 'Radim na ruskom, nemačkom, engleskom i srpskom. Tržišta Rusije i ZND, Nemačke, Srbije i Balkana poznajem iznutra.' },
       { title: 'Imenovanje, brending, sajtovi', text: 'Smišljam nazive i proveravam ih kroz domene i žigove, pravim vizuelni identitet i sajtove od početka do kraja.' },
