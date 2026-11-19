@@ -13,18 +13,20 @@ const site = Astro.site!.origin;
   <link rel="canonical" href={`${site}/`} />
   <link rel="alternate" hreflang="ru" href={`${site}/ru/`} />
   <link rel="alternate" hreflang="en" href={`${site}/en/`} />
+  <link rel="alternate" hreflang="sr-Latn" href={`${site}/sr/`} />
+  <link rel="alternate" hreflang="de" href={`${site}/de/`} />
   <link rel="alternate" hreflang="x-default" href={`${site}/`} />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <script is:inline>
     (function () {
       var ls = (navigator.languages || [navigator.language || 'en']).map(function (l) { return String(l).toLowerCase(); });
-      var ru = ls.some(function (l) { return /^(ru|uk|be|kk)/.test(l); });
-      location.replace(ru ? '/ru/' : '/en/');
+      var pick = function (re) { return ls.some(function (l) { return re.test(l); }); };
+      location.replace(pick(/^(ru|uk|be|kk)/) ? '/ru/' : pick(/^(sr|hr|bs|cnr|mk|sl)/) ? '/sr/' : pick(/^de/) ? '/de/' : '/en/');
     })();
   </script>
   <style>body{font:18px/1.5 Georgia,serif;background:#eef1ea;color:#15292e;display:grid;place-items:center;min-height:90vh;margin:0}a{color:inherit}</style>
 </head>
 <body>
-  <p><a href="/ru/">Константин Штейн — по-русски</a><br /><a href="/en/">Konstantin Stein — in English</a></p>
+  <p><a href="/ru/">Константин Штейн — по-русски</a><br /><a href="/en/">Konstantin Stein — in English</a><br /><a href="/sr/">Konstantin Štajn — na srpskom</a><br /><a href="/de/">Konstantin Stein — auf Deutsch</a></p>
 </body>
 </html>

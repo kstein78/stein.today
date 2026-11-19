@@ -22,6 +22,24 @@
         "Rakovac.rs is a website for people who live here and for those who come to visit.",
         "Using it as a model, I want to build a portal of websites for small villages and towns of Vojvodina: a multi-ethnic region whose nature and culture few people know."
       ]
+    },
+    "sr": {
+      "title": "Rakovac.rs",
+      "summary": "Sajt sela Rakovac na severnoj padini Fruške gore, gde živimo od 2023. Za meštane i goste.",
+      "body": [
+        "Rakovac je na severnoj padini Fruške gore, desetak kilometara od Novog Sada. Ovde je manastir Rakovac, po predanju osnovan 1498, danas zaštićen kao spomenik kulture od izuzetnog značaja.",
+        "Rakovac.rs je sajt za one koji ovde žive i za one koji dolaze u posetu.",
+        "Po njegovom uzoru želim da napravim portal sajtova malih sela i varošica Vojvodine: višenacionalni kraj čiju prirodu i kulturu malo ko poznaje."
+      ]
+    },
+    "de": {
+      "title": "Rakovac.rs",
+      "summary": "Die Website von Rakovac, einem Dorf am Nordhang der Fruška Gora, in dem wir seit 2023 leben. Für Einwohner und Gäste.",
+      "body": [
+        "Rakovac liegt am Nordhang der Fruška Gora, etwa zehn Kilometer von Novi Sad entfernt. Hier steht das Kloster Rakovac, der Überlieferung nach 1498 gegründet und heute als Kulturdenkmal von außerordentlicher Bedeutung geschützt.",
+        "Rakovac.rs ist eine Website für die Menschen, die hier leben, und für alle, die zu Besuch kommen.",
+        "Nach diesem Vorbild möchte ich ein Portal mit Websites kleiner Dörfer und Städtchen der Vojvodina aufbauen: einer Vielvölkerregion, deren Natur und Kultur kaum jemand kennt."
+      ]
     }
   }
 }

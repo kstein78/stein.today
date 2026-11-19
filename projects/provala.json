@@ -12,6 +12,14 @@
     "en": {
       "title": "Lake Provala",
       "summary": "An independent website about Lake Provala near Vajska, the deepest lake in Vojvodina at up to 19 metres. It formed when the flooding Danube broke through an embankment, in 1924 or 1926 depending on the source."
+    },
+    "sr": {
+      "title": "Jezero Provala",
+      "summary": "Nezavisni sajt o jezeru Provala kod Vajske, najdubljem jezeru u Vojvodini, do 19 metara. Nastalo je kada je nabujali Dunav probio nasip — 1924. ili 1926, zavisno od izvora."
+    },
+    "de": {
+      "title": "Provala-See",
+      "summary": "Eine unabhängige Website über den Provala-See bei Vajska, den tiefsten See der Vojvodina mit bis zu 19 Metern. Er entstand, als die Donau bei Hochwasser einen Damm durchbrach — je nach Quelle 1924 oder 1926."
     }
   }
 }

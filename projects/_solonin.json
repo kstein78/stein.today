@@ -12,6 +12,14 @@
     "en": {
       "title": "solonin.org",
       "summary": "The website of historian Mark Solonin. I built it in 2009 and still help keep it running."
+    },
+    "sr": {
+      "title": "solonin.org",
+      "summary": "Sajt istoričara Marka Solonjina. Napravio sam ga 2009. i još uvek pomažem da radi."
+    },
+    "de": {
+      "title": "solonin.org",
+      "summary": "Die Website des Historikers Mark Solonin. Ich habe sie 2009 gebaut und helfe bis heute, sie am Laufen zu halten."
     }
   }
 }

@@ -48,6 +48,50 @@
           "investment and pilot teams"
         ]
       ]
+    },
+    "sr": {
+      "title": "Relograph",
+      "summary": "Pregledniji interfejs za pregled pull requestova na GitHubu, da se izmene u kodu lako čitaju i proveravaju. U aktivnom razvoju i otvoren za investitore.",
+      "body": [
+        "Relograph je pregledniji interfejs za pregled pull requestova na GitHubu.",
+        "Projekat je u aktivnom razvoju. Tražim investiciju i prve timove spremne da ga isprobaju."
+      ],
+      "facts": [
+        [
+          "Faza",
+          "aktivan razvoj"
+        ],
+        [
+          "Za koga",
+          "razvojni timovi na GitHubu"
+        ],
+        [
+          "Potrebno",
+          "investicija i pilot-timovi"
+        ]
+      ]
+    },
+    "de": {
+      "title": "Relograph",
+      "summary": "Eine übersichtlichere Oberfläche für Reviews von Pull Requests auf GitHub, damit Code-Änderungen leicht zu lesen und zu prüfen sind. In aktiver Entwicklung und offen für Investoren.",
+      "body": [
+        "Relograph ist eine übersichtlichere Oberfläche für Reviews von Pull Requests auf GitHub.",
+        "Das Projekt ist in aktiver Entwicklung. Ich suche Investitionen und erste Teams, die es ausprobieren wollen."
+      ],
+      "facts": [
+        [
+          "Phase",
+          "aktive Entwicklung"
+        ],
+        [
+          "Für",
+          "Entwicklungsteams auf GitHub"
+        ],
+        [
+          "Gesucht",
+          "Investition und Pilot-Teams"
+        ]
+      ]
     }
   }
 }

@@ -48,6 +48,44 @@
           "Yugoslavia, Germany, Italy, USSR and more"
         ]
       ]
+    },
+    "sr": {
+      "title": "Kukla·Lutka",
+      "summary": "Naša porodična kolekcija, moja i suprugina: više od 1.500 antiknih, vintidž i retkih lutaka. Pokazujemo, kupujemo i menjamo.",
+      "body": [
+        "Na sajtu je deo kolekcije koju supruga i ja zajedno skupljamo. Lutke iz Jugoslavije, Nemačke, Italije, Rumunije, Poljske, SSSR-a i nekoliko iz SAD.",
+        "Pronalazimo ih na buvljacima, kod drugih kolekcionara i na starim tavanima. Ponekad lutke prepuštamo novim kolekcionarima, a kupujemo i menjamo lutke u bilo kakvom stanju, uključujući one kojima treba restauracija.",
+        "Cene se prikazuju u dinarima, evrima, dolarima i rubljama. Jezici: ruski, srpski, engleski, nemački."
+      ],
+      "facts": [
+        [
+          "U kolekciji",
+          "više od 1.500 lutaka"
+        ],
+        [
+          "Poreklo",
+          "Jugoslavija, Nemačka, Italija, SSSR i drugo"
+        ]
+      ]
+    },
+    "de": {
+      "title": "Kukla·Lutka",
+      "summary": "Unsere Familiensammlung, die meiner Frau und mir gehört: mehr als 1.500 antike, Vintage- und seltene Puppen. Wir zeigen, kaufen und tauschen.",
+      "body": [
+        "Die Website zeigt einen Teil der Sammlung, die meine Frau und ich gemeinsam aufbauen. Puppen aus Jugoslawien, Deutschland, Italien, Rumänien, Polen, der UdSSR und einige aus den USA.",
+        "Wir finden sie auf Flohmärkten, bei anderen Sammlern und auf alten Dachböden. Manchmal geben wir Puppen an neue Sammler ab, und wir kaufen und tauschen Puppen in jedem Zustand, auch restaurierungsbedürftige.",
+        "Preise werden in Dinar, Euro, Dollar und Rubel angezeigt. Sprachen: Russisch, Serbisch, Englisch, Deutsch."
+      ],
+      "facts": [
+        [
+          "Sammlung",
+          "mehr als 1.500 Puppen"
+        ],
+        [
+          "Herkunft",
+          "Jugoslawien, Deutschland, Italien, UdSSR und mehr"
+        ]
+      ]
     }
   }
 }

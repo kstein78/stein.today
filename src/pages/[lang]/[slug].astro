@@ -14,7 +14,7 @@ const t = ui[lang];
 const x = item.t[lang];
 const anchor = { invest: 'projects', site: 'sites', hobby: 'passions' }[item.group];
 const host = item.url ? item.url.replace(/^https?:\/\//, '').replace(/\/$/, '') : null;
-const askLabel = lang === 'ru' ? 'Обсудить в Telegram' : 'Discuss on Telegram';
+const askLabel = t.discuss;
 ---
 <Base lang={lang} title={`${x.title} — ${t.name}`} description={x.summary} path={`${item.slug}/`}>
   <article class="wrap page">

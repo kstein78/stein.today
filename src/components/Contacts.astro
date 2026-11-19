@@ -1,8 +1,8 @@
 ---
-import { contacts, type Lang } from '../data/content';
+import { contacts, ui, type Lang } from '../data/content';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
-const h = lang === 'ru' ? { write: 'Написать', profiles: 'Профили' } : { write: 'Message me', profiles: 'Profiles' };
+const h = { write: ui[lang].write, profiles: ui[lang].profiles };
 ---
 <div class="contacts">
   <div>

@@ -12,6 +12,14 @@
     "en": {
       "title": "Travel",
       "summary": "I have lived, studied and worked in five countries. Google Maps Local Guide, level 8: I map places, write reviews and post photos."
+    },
+    "sr": {
+      "title": "Putovanja",
+      "summary": "Živeo sam, učio i radio u pet zemalja. Google Maps Local Guide, nivo 8: označavam mesta, pišem recenzije i objavljujem fotografije."
+    },
+    "de": {
+      "title": "Reisen",
+      "summary": "Ich habe in fünf Ländern gelebt, gelernt und gearbeitet. Google Maps Local Guide, Stufe 8: Ich erfasse Orte, schreibe Bewertungen und lade Fotos hoch."
     }
   },
   "links": [

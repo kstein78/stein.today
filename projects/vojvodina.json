@@ -12,6 +12,14 @@
     "en": {
       "title": "Vojvodina villages portal",
       "summary": "Bringing the websites of the region’s small villages and towns together on the Rakovac.rs model: tourism, nature and multi-ethnic culture."
+    },
+    "sr": {
+      "title": "Portal sela Vojvodine",
+      "summary": "Povezati sajtove malih sela i varošica kraja po modelu Rakovac.rs: turizam, priroda, višenacionalna kultura."
+    },
+    "de": {
+      "title": "Portal der Dörfer der Vojvodina",
+      "summary": "Die Websites kleiner Dörfer und Städtchen der Region nach dem Vorbild von Rakovac.rs zusammenführen: Tourismus, Natur, multiethnische Kultur."
     }
   }
 }
