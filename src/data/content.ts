@@ -183,15 +183,6 @@ export interface Job {
 }
 export const jobs: Job[] = [
   {
-    cvOnly: true,
-    years: 'сейчас',
-    org: 'ADSBase',
-    t: {
-      ru: { years: 'сейчас', role: 'в штате', text: 'Медиагруппа в сфере аффилиат-маркетинга.' },
-      en: { years: 'now', role: 'staff role', text: 'An affiliate marketing media group.' },
-    },
-  },
-  {
     years: '2024 —',
     org: 'Optilife',
     url: 'https://optilife.rs',
@@ -204,6 +195,15 @@ export const jobs: Job[] = [
         role: 'CEO and founder',
         text: 'An IT company in Novi Sad building AI-powered products: a roadside assistance system for heavy-truck drivers in Germany (trucknetz.de) and a service that manages utility bills for individuals and homeowners.',
       },
+    },
+  },
+  {
+    cvOnly: true,
+    years: '… — 10.2026',
+    org: 'ADSBase',
+    t: {
+      ru: { role: 'Chief of Account Departments', text: 'Медиагруппа в сфере аффилиат-маркетинга. Работал до 10.10.2026.' },
+      en: { role: 'Chief of Account Departments', text: 'An affiliate marketing media group. Until 10 October 2026.' },
     },
   },
   {
