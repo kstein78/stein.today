@@ -1,0 +1,59 @@
+{
+  "order": 30,
+  "slug": "houseboat",
+  "group": "invest",
+  "status": "seeking",
+  "url": "https://kayakhouse.rs",
+  "links": [
+    {
+      "label": "kayakhouse.rs",
+      "url": "https://kayakhouse.rs"
+    }
+  ],
+  "t": {
+    "ru": {
+      "title": "Хаусбот: 7pro8 × Kayakhouse",
+      "summary": "Люксовый дом на воде на катамаранной платформе — для рек и озёр. Вместе с мастерской интерьеров 7pro8 и Kayakhouse.rs. Готов инвестиционный план.",
+      "body": [
+        "Проект делаем вместе с 7pro8 — мастерской люксовых автомобильных интерьеров — и Kayakhouse.rs.",
+        "Инвестиционный план готов. Ищу инвестора и партнёров. План пришлю по запросу."
+      ],
+      "facts": [
+        [
+          "Сегмент",
+          "реки и озёра, премиум"
+        ],
+        [
+          "Партнёры",
+          "7pro8, Kayakhouse.rs"
+        ],
+        [
+          "Нужно",
+          "инвестор и партнёры"
+        ]
+      ]
+    },
+    "en": {
+      "title": "Houseboat: 7pro8 × Kayakhouse",
+      "summary": "A luxury home on the water on a catamaran platform, built for rivers and lakes. Together with interior studio 7pro8 and Kayakhouse.rs. Investment plan ready.",
+      "body": [
+        "We are building it together with 7pro8, a luxury automotive interior studio, and Kayakhouse.rs.",
+        "The investment plan is ready. I am looking for an investor and partners. Plan available on request."
+      ],
+      "facts": [
+        [
+          "Segment",
+          "rivers and lakes, premium"
+        ],
+        [
+          "Partners",
+          "7pro8, Kayakhouse.rs"
+        ],
+        [
+          "Needs",
+          "investor and partners"
+        ]
+      ]
+    }
+  }
+}

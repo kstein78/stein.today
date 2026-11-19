@@ -1,0 +1,17 @@
+---
+// Условный знак статуса. Используется и на карте (x/y), и в списках (inline).
+import type { Status } from '../data/content';
+interface Props { status: Status; x?: number; y?: number; size?: number; inline?: boolean }
+const { status, x = 0, y = 0, size = 14, inline = false } = Astro.props;
+const h = size / 2;
+const shape = {
+  live: `<circle cx="0" cy="0" r="${h * 0.62}" class="sym-live"/>`,
+  seeking: `<path d="M0 ${-h * 0.85} L${h * 0.85} 0 L0 ${h * 0.85} L${-h * 0.85} 0Z" class="sym-seeking"/>`,
+  collection: `<path d="M0 ${-h * 0.8} L${h * 0.78} ${h * 0.6} L${-h * 0.78} ${h * 0.6}Z" class="sym-collection"/>`,
+  archive: `<circle cx="0" cy="0" r="${h * 0.55}" class="sym-archive"/>`,
+  planned: `<circle cx="0" cy="0" r="${h * 0.55}" class="sym-planned"/>`,
+}[status];
+---
+{inline
+  ? <svg class="sym" width={size} height={size} viewBox={`${-h} ${-h} ${size} ${size}`} aria-hidden="true" set:html={shape} />
+  : <g transform={`translate(${x} ${y})`} set:html={shape} />}

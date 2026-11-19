@@ -1,0 +1,30 @@
+---
+// Корень stein.today: выбираем язык по браузеру. Без JS — ссылки на обе версии.
+import { ui } from '../data/content';
+const site = Astro.site!.origin;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Konstantin Stein · Константин Штейн</title>
+  <meta name="description" content={ui.en.metaDesc} />
+  <link rel="canonical" href={`${site}/`} />
+  <link rel="alternate" hreflang="ru" href={`${site}/ru/`} />
+  <link rel="alternate" hreflang="en" href={`${site}/en/`} />
+  <link rel="alternate" hreflang="x-default" href={`${site}/`} />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <script is:inline>
+    (function () {
+      var ls = (navigator.languages || [navigator.language || 'en']).map(function (l) { return String(l).toLowerCase(); });
+      var ru = ls.some(function (l) { return /^(ru|uk|be|kk)/.test(l); });
+      location.replace(ru ? '/ru/' : '/en/');
+    })();
+  </script>
+  <style>body{font:18px/1.5 Georgia,serif;background:#eef1ea;color:#15292e;display:grid;place-items:center;min-height:90vh;margin:0}a{color:inherit}</style>
+</head>
+<body>
+  <p><a href="/ru/">Константин Штейн — по-русски</a><br /><a href="/en/">Konstantin Stein — in English</a></p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "order": 100,
+  "slug": "new-project",
+  "group": "invest",
+  "status": "seeking",
+  "url": "https://example.com",
+  "links": [
+    { "label": "Презентация", "url": "https://example.com/deck.pdf" }
+  ],
+  "t": {
+    "ru": {
+      "title": "Название проекта",
+      "summary": "Одно-два предложения: что это и что сейчас нужно.",
+      "body": [
+        "Абзац 1. Если body есть — у проекта появится отдельная страница.",
+        "Абзац 2."
+      ],
+      "facts": [["Стадия", "прототип"], ["Нужно", "инвестор"]]
+    },
+    "en": {
+      "title": "Project name",
+      "summary": "One or two sentences: what it is and what it needs now.",
+      "body": ["Paragraph 1.", "Paragraph 2."],
+      "facts": [["Stage", "prototype"], ["Needs", "investor"]]
+    }
+  }
+}

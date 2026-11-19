@@ -1,0 +1,57 @@
+{
+  "order": 50,
+  "slug": "divno",
+  "group": "site",
+  "status": "live",
+  "url": "https://divno.rs",
+  "t": {
+    "ru": {
+      "title": "divno.rs",
+      "summary": "Площадка для антиквариата, винтажа и обмена по Сербии и бывшей Югославии. Без комиссий и платных поднятий.",
+      "body": [
+        "divno — место, где покупают, продают и меняют старые вещи: мебель, керамику, игрушки, часы, книги, монеты, пластинки.",
+        "Можно попросить охотников с барахолок найти нужную вещь, а экспертов — подсказать, что это за предмет и сколько он стоит. За полезную помощь начисляются «дукаты» — репутация, по которой видно, кому можно доверять.",
+        "Объявление можно разместить на сайте, через Telegram-бота или ссылкой на KupujemProdajem, Kupinda и eBay. Пять языков: сербский (латиница и кириллица), русский, английский, немецкий.",
+        "Восьмиконечная звезда в логотипе — из узоров пиротских ковров, которые внесены в список нематериального наследия Сербии."
+      ],
+      "facts": [
+        [
+          "Комиссия",
+          "нет"
+        ],
+        [
+          "Языки",
+          "5"
+        ],
+        [
+          "География",
+          "Сербия и бывшая Югославия"
+        ]
+      ]
+    },
+    "en": {
+      "title": "divno.rs",
+      "summary": "A marketplace for antiques, vintage and swaps across Serbia and the former Yugoslavia. No commissions, no paid boosts.",
+      "body": [
+        "divno is where people buy, sell and swap old things: furniture, ceramics, toys, watches, books, coins and records.",
+        "You can ask flea-market hunters to find a specific item, or ask experts what an object is and what it is worth. Helpful work earns “dukati”, a reputation score that shows who can be trusted.",
+        "Listings can be posted on the site, through a Telegram bot, or by linking to KupujemProdajem, Kupinda or eBay. Five languages: Serbian (Latin and Cyrillic), Russian, English and German.",
+        "The eight-pointed star in the logo comes from the patterns of Pirot carpets, which are on Serbia’s intangible cultural heritage list."
+      ],
+      "facts": [
+        [
+          "Commission",
+          "none"
+        ],
+        [
+          "Languages",
+          "5"
+        ],
+        [
+          "Region",
+          "Serbia and the former Yugoslavia"
+        ]
+      ]
+    }
+  }
+}

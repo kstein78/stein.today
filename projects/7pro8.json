@@ -1,0 +1,47 @@
+{
+  "order": 40,
+  "slug": "7pro8",
+  "group": "invest",
+  "status": "seeking",
+  "url": null,
+  "t": {
+    "ru": {
+      "title": "7pro8",
+      "summary": "Мастерская люксовых автомобильных интерьеров. Сделал для неё сайт и строю сеть партнёров в Великобритании, ОАЭ, Германии, США и Саудовской Аравии.",
+      "body": [
+        "7pro8 делает люксовые интерьеры для автомобилей.",
+        "Я сделал мастерской сайт и занимаюсь её международным развитием через сеть партнёров в Великобритании, ОАЭ, Германии, США и Саудовской Аравии.",
+        "Если вы работаете с премиальными автомобилями в этих странах — давайте поговорим."
+      ],
+      "facts": [
+        [
+          "Рынки",
+          "Великобритания, ОАЭ, Германия, США, Саудовская Аравия"
+        ],
+        [
+          "Ищем",
+          "партнёров"
+        ]
+      ]
+    },
+    "en": {
+      "title": "7pro8",
+      "summary": "A luxury automotive interior studio. I built its website and am growing a partner network across the UK, UAE, Germany, the US and Saudi Arabia.",
+      "body": [
+        "7pro8 builds luxury interiors for cars.",
+        "I built the studio’s website and lead its international expansion through a partner network in the UK, UAE, Germany, the US and Saudi Arabia.",
+        "If you work with premium cars in these countries, let’s talk."
+      ],
+      "facts": [
+        [
+          "Markets",
+          "UK, UAE, Germany, US, Saudi Arabia"
+        ],
+        [
+          "Looking for",
+          "partners"
+        ]
+      ]
+    }
+  }
+}

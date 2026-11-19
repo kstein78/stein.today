@@ -1,0 +1,17 @@
+{
+  "order": 110,
+  "slug": "vojvodina",
+  "group": "site",
+  "status": "planned",
+  "url": null,
+  "t": {
+    "ru": {
+      "title": "Портал сёл Воеводины",
+      "summary": "Объединить сайты малых сёл и городков края по модели Rakovac.rs: туризм, природа, многонациональная культура."
+    },
+    "en": {
+      "title": "Vojvodina villages portal",
+      "summary": "Bringing the websites of the region’s small villages and towns together on the Rakovac.rs model: tourism, nature and multi-ethnic culture."
+    }
+  }
+}

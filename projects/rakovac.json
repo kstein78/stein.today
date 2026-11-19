@@ -1,0 +1,27 @@
+{
+  "order": 70,
+  "slug": "rakovac",
+  "group": "site",
+  "status": "live",
+  "url": "https://rakovac.rs",
+  "t": {
+    "ru": {
+      "title": "Rakovac.rs",
+      "summary": "Сайт села Раковац на северном склоне Фрушка-горы, где мы живём с 2023 года. Для жителей и гостей.",
+      "body": [
+        "Раковац — село на северном склоне Фрушка-горы, примерно в десяти километрах от Нови-Сада. Здесь стоит монастырь Раковац: по преданию, он основан в 1498 году и сегодня охраняется как памятник культуры исключительного значения.",
+        "Rakovac.rs — сайт для тех, кто здесь живёт, и для тех, кто приезжает в гости.",
+        "По его образцу я хочу собрать портал сайтов малых сёл и городков Воеводины: многонациональный край, природа и культура, которые мало кто знает."
+      ]
+    },
+    "en": {
+      "title": "Rakovac.rs",
+      "summary": "The website of Rakovac, a village on the northern slope of Fruška Gora where we have lived since 2023. For residents and visitors.",
+      "body": [
+        "Rakovac sits on the northern slope of Fruška Gora, about ten kilometres from Novi Sad. It is home to Rakovac Monastery, founded according to tradition in 1498 and protected today as a cultural monument of exceptional importance.",
+        "Rakovac.rs is a website for people who live here and for those who come to visit.",
+        "Using it as a model, I want to build a portal of websites for small villages and towns of Vojvodina: a multi-ethnic region whose nature and culture few people know."
+      ]
+    }
+  }
+}

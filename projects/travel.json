@@ -1,0 +1,17 @@
+{
+  "order": 140,
+  "slug": "travel",
+  "group": "hobby",
+  "status": "collection",
+  "url": null,
+  "t": {
+    "ru": {
+      "title": "Путешествия",
+      "summary": "Жил, учился и работал в пяти странах. Google Maps Local Guide восьмого уровня: отмечаю места, пишу отзывы, выкладываю фото."
+    },
+    "en": {
+      "title": "Travel",
+      "summary": "I have lived, studied and worked in five countries. Google Maps Local Guide, level 8: I map places, write reviews and post photos."
+    }
+  }
+}

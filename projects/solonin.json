@@ -1,0 +1,17 @@
+{
+  "order": 100,
+  "slug": "solonin",
+  "group": "site",
+  "status": "archive",
+  "url": "https://solonin.org",
+  "t": {
+    "ru": {
+      "title": "solonin.org",
+      "summary": "Сайт историка Марка Солонина. Сделал его в 2009 году и до сих пор помогаю ему работать."
+    },
+    "en": {
+      "title": "solonin.org",
+      "summary": "The website of historian Mark Solonin. I built it in 2009 and still help keep it running."
+    }
+  }
+}

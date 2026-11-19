@@ -1,0 +1,16 @@
+---
+import { contacts, type Lang } from '../data/content';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const h = lang === 'ru' ? { write: 'Написать', profiles: 'Профили' } : { write: 'Message me', profiles: 'Profiles' };
+---
+<div class="contacts">
+  <div>
+    <h3>{h.write}</h3>
+    <ul>{contacts.write.map((c) => <li><a href={c.url} rel="noopener me">{c.label}</a></li>)}</ul>
+  </div>
+  <div>
+    <h3>{h.profiles}</h3>
+    <ul>{contacts.profiles.map((c) => <li><a href={c.url} rel="noopener me">{c.label}</a></li>)}</ul>
+  </div>
+</div>

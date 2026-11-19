@@ -1,0 +1,27 @@
+{
+  "order": 150,
+  "slug": "local-history",
+  "group": "hobby",
+  "status": "collection",
+  "url": null,
+  "t": {
+    "ru": {
+      "title": "Краеведение",
+      "summary": "Фрушка-гора, сёла Воеводины, монастыри и озёра — и история собственной семьи.",
+      "body": [
+        "Воеводина — край, где по соседству живут сербы, венгры, словаки, хорваты, румыны и русины. Каждое село здесь со своей историей, и я собираю её на сайтах Раковца, Вайски и Провалы.",
+        "Фрушка-гора — старейший национальный парк Сербии, когда-то остров Паннонского моря. Монастырь Раковац, по преданию, основан в 1498 году.",
+        "Вторая линия — история семьи. Мой дед, Константин Худенский (1906–1966), перевёл на русский «Энеиду» Котляревского; перевод вышел в 1961 году. Сейчас я её оцифровываю. А корни рода удалось проследить до мазовецкой шляхты."
+      ]
+    },
+    "en": {
+      "title": "Local history",
+      "summary": "Fruška Gora, the villages of Vojvodina, monasteries and lakes — and the history of my own family.",
+      "body": [
+        "Vojvodina is a region where Serbs, Hungarians, Slovaks, Croats, Romanians and Rusyns live side by side. Every village has its own story, and I collect them on the websites of Rakovac, Vajska and Provala.",
+        "Fruška Gora is Serbia’s oldest national park and was once an island in the Pannonian Sea. Rakovac Monastery was founded, according to tradition, in 1498.",
+        "The second thread is family history. My grandfather, Konstantin Khudensky (1906–1966), translated Kotlyarevsky’s “Eneida” into Russian; the translation was published in 1961. I am digitising it now. I have also traced the family roots back to the Masovian nobility."
+      ]
+    }
+  }
+}

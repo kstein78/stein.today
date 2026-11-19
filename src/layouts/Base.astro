@@ -1,0 +1,66 @@
+---
+import '@fontsource-variable/literata/opsz.css';
+import '@fontsource-variable/literata/opsz-italic.css';
+import '@fontsource-variable/golos-text/index.css';
+import '../styles/global.css';
+import { ui, LANGS, type Lang } from '../data/content';
+
+interface Props { lang: Lang; title: string; description: string; path: string; /** путь без языка, напр. "cv/" */ }
+const { lang, title, description, path } = Astro.props;
+const t = ui[lang];
+const site = Astro.site!.origin;
+const url = (l: Lang) => `${site}/${l}/${path}`;
+const built = new Date().toISOString().slice(0, 10);
+---
+<!doctype html>
+<html lang={lang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={url(lang)} />
+  {LANGS.map((l) => <link rel="alternate" hreflang={l} href={url(l)} />)}
+  <link rel="alternate" hreflang="x-default" href={`${site}/`} />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={url(lang)} />
+  <meta property="og:locale" content={lang === 'ru' ? 'ru_RU' : 'en_US'} />
+  <meta property="og:image" content={`${site}/og.png`} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#eef1ea" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org', '@type': 'Person', name: 'Konstantin Stein',
+    alternateName: ['Константин Штейн', 'Konstantin Štajn', 'Kosta Stein'],
+    url: site, jobTitle: 'CEO, founder, media executive',
+    worksFor: { '@type': 'Organization', name: 'Optilife', url: 'https://optilife.rs' },
+    address: { '@type': 'PostalAddress', addressLocality: 'Rakovac', addressCountry: 'RS' },
+    sameAs: ['https://www.linkedin.com/in/konstantinstein/', 'https://www.facebook.com/konstantin.stein', 'https://x.com/konstantinstein', 'https://github.com/kstein78', 'https://stein-1.com'],
+  })} />
+</head>
+<body>
+  <a class="skip" href="#main">{lang === 'ru' ? 'К содержанию' : 'Skip to content'}</a>
+  <header class="wrap top">
+    <a class="home" href={`/${lang}/`}>{t.name}</a>
+    <nav aria-label={lang === 'ru' ? 'Разделы' : 'Sections'}>
+      <a href={`/${lang}/#work`}>{t.nav.work}</a>
+      <a href={`/${lang}/#projects`}>{t.nav.invest}</a>
+      <a href={`/${lang}/#sites`}>{t.nav.sites}</a>
+      <a href={`/${lang}/#passions`}>{t.nav.hobby}</a>
+      <a href={`/${lang}/#contact`}>{t.nav.contact}</a>
+    </nav>
+    <div class="langs">
+      {LANGS.map((l) => l === lang
+        ? <span aria-current="page" lang={l}>{l.toUpperCase()}</span>
+        : <a href={`/${l}/${path}`} hreflang={l} lang={l} title={ui[l].langName}>{l.toUpperCase()}</a>)}
+    </div>
+  </header>
+  <main id="main"><slot /></main>
+  <footer class="wrap foot">
+    <span>© {new Date().getFullYear()} {t.name}</span>
+    <span>{t.footer}: {built}</span>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+---
+import Symbol from './Symbol.astro';
+import { ui, hasPage, type Item, type Lang } from '../data/content';
+interface Props { item: Item; lang: Lang }
+const { item, lang } = Astro.props;
+const t = ui[lang];
+const x = item.t[lang];
+const page = hasPage(item) ? `/${lang}/${item.slug}/` : null;
+const host = item.url ? item.url.replace(/^https?:\/\//, '').replace(/\/$/, '') : null;
+---
+<li class="row" id={item.slug}>
+  <Symbol status={item.status} inline size={15} />
+  <div>
+    <h3>{page ? <a href={page}>{x.title}</a> : x.title}</h3>
+    <p>{x.summary}</p>
+    <div class="go">
+      {page && <a href={page}>{t.more}</a>}
+      {item.url && <a href={item.url} rel="noopener">{host}</a>}
+      {item.links?.filter((l) => l.url !== item.url).map((l) => <a href={l.url} rel="noopener">{l.label}</a>)}
+      {!item.url && item.group === 'site' && item.status === 'live' && <span class="muted">{t.soon}</span>}
+    </div>
+  </div>
+</li>

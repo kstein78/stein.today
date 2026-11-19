@@ -1,0 +1,17 @@
+{
+  "order": 90,
+  "slug": "provala",
+  "group": "site",
+  "status": "live",
+  "url": null,
+  "t": {
+    "ru": {
+      "title": "Озеро Провала",
+      "summary": "Сайт об озере Провала у Вайски. Оно появилось в 1924 году, когда большое половодье Дуная прорвало насыпь."
+    },
+    "en": {
+      "title": "Lake Provala",
+      "summary": "A website about Lake Provala near Vajska. The lake formed in 1924, when a major Danube flood broke through the embankment."
+    }
+  }
+}
