@@ -73,22 +73,22 @@ export const jobs: Job[] = [
     t: {
       ru: {
         role: 'CEO и основатель',
-        text: 'Сеть новостных и развлекательных сайтов (blitz.plus, blitz.style) на собственной CMS с ML-ранжированием и озвучкой текста; консалтинг онлайн-медиа (kinoafisha.info, day.ru). Бизнес передан партнёрам в России.',
+        text: 'Сеть новостных и развлекательных сайтов (blitz.plus, blitz.style) на собственной CMS с ML-ранжированием и озвучкой текста; консалтинг онлайн-медиа (kinoafisha.info, day.ru). Выход из бизнеса — в 2023–2024 годах.',
         numbers: ['4–6,5 млн уникальных посетителей в день', 'команда до 158 человек', 'выручка больше 1,5 млн € в 2022 и 2023 годах'],
       },
       en: {
         role: 'CEO and founder',
-        text: 'A network of news and entertainment websites (blitz.plus, blitz.style) on a proprietary CMS with ML ranking and text-to-speech; consulting for online media (kinoafisha.info, day.ru). The business was handed over to partners in Russia.',
+        text: 'A network of news and entertainment websites (blitz.plus, blitz.style) on a proprietary CMS with ML ranking and text-to-speech; consulting for online media (kinoafisha.info, day.ru). I exited the business in 2023–2024.',
         numbers: ['4–6.5 million daily unique visitors', 'team of up to 158', 'revenue above €1.5 million in both 2022 and 2023'],
       },
       sr: {
         role: 'CEO i osnivač',
-        text: 'Mreža informativnih i zabavnih sajtova (blitz.plus, blitz.style) na sopstvenom CMS-u sa ML rangiranjem i pretvaranjem teksta u govor; konsalting za onlajn medije (kinoafisha.info, day.ru). Biznis je predat partnerima u Rusiji.',
+        text: 'Mreža informativnih i zabavnih sajtova (blitz.plus, blitz.style) na sopstvenom CMS-u sa ML rangiranjem i pretvaranjem teksta u govor; konsalting za onlajn medije (kinoafisha.info, day.ru). Izlazak iz biznisa 2023–2024.',
         numbers: ['4–6,5 miliona jedinstvenih posetilaca dnevno', 'tim do 158 ljudi', 'prihod preko 1,5 miliona € u 2022. i 2023.'],
       },
       de: {
         role: 'CEO und Gründer',
-        text: 'Netzwerk von Nachrichten- und Unterhaltungsportalen (blitz.plus, blitz.style) auf einem eigenen CMS mit ML-Ranking und Text-to-Speech; Beratung von Online-Medien (kinoafisha.info, day.ru). Das Geschäft wurde an Partner in Russland übergeben.',
+        text: 'Netzwerk von Nachrichten- und Unterhaltungsportalen (blitz.plus, blitz.style) auf einem eigenen CMS mit ML-Ranking und Text-to-Speech; Beratung von Online-Medien (kinoafisha.info, day.ru). Ausstieg aus dem Unternehmen 2023–2024.',
         numbers: ['4–6,5 Mio. Unique Visitors pro Tag', 'Team mit bis zu 158 Personen', 'Umsatz über 1,5 Mio. € in 2022 und 2023'],
       },
     },
