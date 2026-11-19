@@ -26,6 +26,7 @@
 | Контакты, соцсети | `src/data/content.ts` |
 | Дизайн | `src/styles/global.css` |
 | Карта на главной | генерируется: `python3 tools/map.py > tools/map.json && python3 tools/gen_heromap.py` |
+| Логотип и фавиконки | герб von Stein (Schwed. A. 30.9.1653): `tools/coa/` — исходник и скрипт `build_coa.py` → `public/logo.svg`, `public/favicon.svg`, PNG и ICO |
 | Проверка ссылок | `node tools/check-links.mjs` (после `npm run build`) |
 
 ## Локально

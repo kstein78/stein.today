@@ -2,7 +2,7 @@
 
 export type Lang = 'ru' | 'en' | 'sr' | 'de';
 /** Порядок = порядок в переключателе языков. Добавить язык: сюда + src/i18n/<lang>.ts + t.<lang> в проектах и cv.ts */
-export const LANGS: Lang[] = ['ru', 'en', 'sr', 'de'];
+export const LANGS: Lang[] = ['en', 'sr', 'de', 'ru'];
 
 /** Статус = значок на карте-легенде. Одна форма — один смысл. */
 export type Status = 'live' | 'seeking' | 'collection' | 'archive' | 'planned';
