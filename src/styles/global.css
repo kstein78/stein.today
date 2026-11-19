@@ -234,3 +234,4 @@ a:hover { color: var(--bermet); text-decoration-color: currentColor; }
 .coa-logo img { width: 5.5rem; height: auto; }
 @media (max-width: 560px) { .coa-logo { grid-template-columns: 3.5rem minmax(0, 1fr); } .coa-logo img { width: 3.5rem; } }
 .foot a { color: inherit; }
+.coa-source { font-family: var(--sans); font-size: 0.9rem; }

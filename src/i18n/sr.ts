@@ -75,7 +75,10 @@ export default {
     metaDesc: 'Odakle logotip stein.today: grb porodice fon Štajn sa lista iz kolekcije Konstantina Štajna. I ukratko o istraživanju porodične istorije.',
     lead: 'Logotip sajta je nacrtan prema grbu porodice fon Štajn. Ovaj list je iz moje kolekcije i visi na mom zidu.',
     photoAlt: 'Grb von Stein: plavi štit sa zlatnom krunisanom glavom jelena i tri zvezde, šlem, plašt i nakit',
-    photoCaption: 'Grb von Stein. Natpis na dnu: „Schwed. A. 30. 9. 1653“ — sudeći po njemu, švedsko plemstvo dodeljeno 30. septembra 1653.',
+    photoCaption: 'Grb von Stein. Natpisi na dnu: „L.“ — Livonija, „Schwed. A. 30. 9. 1653“ — švedsko plemstvo dodeljeno 30. septembra 1653.',
+    blazonTitle: 'Opis grba',
+    blazonText: 'U grbovnicima je ovaj grb zabeležen kao Stein, Livonija (švedsko plemstvo od 30. septembra 1653): u plavom štitu zlatna glava jelena spreda pod zlatnom krunom, sa tri zlatne zvezde — jednom gore i dve dole. Nakit: srebrni mač sa zlatnim balčakom, vrhom nagore, između dve zlatne zvezde, između krila podeljenih naizmenično zlatnom i plavom bojom.',
+    sourceLabel: 'Izvor opisa: coadb.com',
     logoTitle: 'Kako je nastao logotip',
     logoText: [
       'Za logotip sam uzeo samo štit: plavo polje, zlatnu glavu jelena pod krunom i tri zlatne zvezde. Šlem, plašt i nakit sa krilima i mačem se u malom formatu stapaju u mrlju, pa ih na logotipu nema.',
