@@ -3,93 +3,117 @@
   "slug": "relograph",
   "group": "invest",
   "status": "seeking",
-  "url": null,
+  "url": "https://relograph.com",
   "t": {
     "ru": {
       "title": "Relograph",
-      "summary": "Удобный интерфейс для ревью pull request’ов на GitHub: чтобы изменения в коде было легко читать и проверять. В активной разработке, открыт для инвесторов.",
+      "summary": "Ежемесячный индекс эмиграции для русскоязычных: рейтинг 20 стран, проверенные статьи и видео, реальные цены от сообщества. Прототип второй версии, ищу инвестора.",
       "body": [
-        "Relograph — более читаемый интерфейс для ревью pull request’ов на GitHub.",
-        "Проект в активной разработке. Ищу инвестиции и первые команды, готовые попробовать."
+        "Relograph помогает русскоязычным, которые думают о переезде, сравнить страны на данных, а не на слухах.",
+        "Каждый месяц выходит рейтинг 20 стран по семи категориям: стоимость жизни, визы и ВНЖ, банки для россиян и белорусов, интеграция и образование, качество жизни, сообщество, гражданство. Методология и исходные данные открыты.",
+        "Рядом с рейтингом — статьи, репортажи с мест и видео, каждый материал проходит фактчекинг. Цены присылает сообщество: фото ценников через Telegram-бота, перед попаданием в индекс их проверяет модератор.",
+        "Сейчас работает прототип второй версии. Ищу инвестора и партнёров — экспертов и корреспондентов в разных странах."
       ],
       "facts": [
         [
           "Стадия",
-          "активная разработка"
+          "прототип v2"
         ],
         [
           "Для кого",
-          "команды разработки на GitHub"
+          "русскоязычные, которые думают об эмиграции"
+        ],
+        [
+          "Охват",
+          "20 стран, обновление раз в месяц"
         ],
         [
           "Нужно",
-          "инвестиции и пилотные команды"
+          "инвестиции и партнёры"
         ]
       ]
     },
     "en": {
       "title": "Relograph",
-      "summary": "A more readable interface for reviewing GitHub pull requests, so code changes are easy to read and check. In active development and open to investors.",
+      "summary": "A monthly emigration index for Russian speakers: a ranking of 20 countries, fact-checked articles and video, real prices reported by the community. Prototype v2, looking for an investor.",
       "body": [
-        "Relograph is a more readable interface for reviewing GitHub pull requests.",
-        "The project is in active development. I am looking for investment and for first teams willing to try it."
+        "Relograph helps Russian speakers who are thinking of moving abroad compare countries on data rather than rumours.",
+        "Every month it ranks 20 countries across seven categories: cost of living, visas and residence permits, banking for Russians and Belarusians, integration and education, quality of life, community, and citizenship. The methodology and raw data are published.",
+        "Next to the ranking are articles, field reports and video, each piece fact-checked. Prices come from the community: photos of price tags sent through a Telegram bot and checked by a moderator before they enter the index.",
+        "The second prototype is live. I am looking for an investor and for partners: experts and correspondents in different countries."
       ],
       "facts": [
         [
           "Stage",
-          "active development"
+          "prototype v2"
         ],
         [
           "For",
-          "engineering teams on GitHub"
+          "Russian speakers considering emigration"
+        ],
+        [
+          "Coverage",
+          "20 countries, updated monthly"
         ],
         [
           "Needs",
-          "investment and pilot teams"
+          "investment and partners"
         ]
       ]
     },
     "sr": {
       "title": "Relograph",
-      "summary": "Pregledniji interfejs za pregled pull requestova na GitHubu, da se izmene u kodu lako čitaju i proveravaju. U aktivnom razvoju i otvoren za investitore.",
+      "summary": "Mesečni indeks emigracije za rusko govorno područje: rang-lista 20 zemalja, provereni članci i video, stvarne cene od zajednice. Prototip druge verzije, tražim investitora.",
       "body": [
-        "Relograph je pregledniji interfejs za pregled pull requestova na GitHubu.",
-        "Projekat je u aktivnom razvoju. Tražim investiciju i prve timove spremne da ga isprobaju."
+        "Relograph pomaže ljudima koji govore ruski, a razmišljaju o preseljenju, da uporede zemlje na osnovu podataka, a ne glasina.",
+        "Svakog meseca izlazi rang-lista 20 zemalja u sedam kategorija: troškovi života, vize i boravišne dozvole, bankarstvo za Ruse i Beloruse, integracija i obrazovanje, kvalitet života, zajednica, državljanstvo. Metodologija i izvorni podaci su javni.",
+        "Uz rang-listu su članci, reportaže sa terena i video, a svaki materijal prolazi proveru činjenica. Cene šalje zajednica: fotografije cena preko Telegram bota, koje moderator proverava pre ulaska u indeks.",
+        "Sada radi prototip druge verzije. Tražim investitora i partnere — stručnjake i dopisnike u različitim zemljama."
       ],
       "facts": [
         [
           "Faza",
-          "aktivan razvoj"
+          "prototip v2"
         ],
         [
           "Za koga",
-          "razvojni timovi na GitHubu"
+          "rusko govorno područje, ljudi koji razmišljaju o emigraciji"
+        ],
+        [
+          "Obuhvat",
+          "20 zemalja, mesečno ažuriranje"
         ],
         [
           "Potrebno",
-          "investicija i pilot-timovi"
+          "investicija i partneri"
         ]
       ]
     },
     "de": {
       "title": "Relograph",
-      "summary": "Eine übersichtlichere Oberfläche für Reviews von Pull Requests auf GitHub, damit Code-Änderungen leicht zu lesen und zu prüfen sind. In aktiver Entwicklung und offen für Investoren.",
+      "summary": "Ein monatlicher Auswanderungsindex für Russischsprachige: Ranking von 20 Ländern, faktengeprüfte Artikel und Videos, echte Preise aus der Community. Prototyp v2, Investor gesucht.",
       "body": [
-        "Relograph ist eine übersichtlichere Oberfläche für Reviews von Pull Requests auf GitHub.",
-        "Das Projekt ist in aktiver Entwicklung. Ich suche Investitionen und erste Teams, die es ausprobieren wollen."
+        "Relograph hilft Russischsprachigen, die über einen Umzug nachdenken, Länder anhand von Daten statt Gerüchten zu vergleichen.",
+        "Jeden Monat erscheint ein Ranking von 20 Ländern in sieben Kategorien: Lebenshaltungskosten, Visa und Aufenthaltstitel, Banking für Russen und Belarussen, Integration und Bildung, Lebensqualität, Community und Staatsbürgerschaft. Methodik und Rohdaten sind öffentlich.",
+        "Neben dem Ranking gibt es Artikel, Vor-Ort-Reportagen und Videos, jeder Beitrag wird auf Fakten geprüft. Preise kommen aus der Community: Fotos von Preisschildern per Telegram-Bot, die ein Moderator prüft, bevor sie in den Index eingehen.",
+        "Der zweite Prototyp ist online. Ich suche einen Investor und Partner: Experten und Korrespondenten in verschiedenen Ländern."
       ],
       "facts": [
         [
           "Phase",
-          "aktive Entwicklung"
+          "Prototyp v2"
         ],
         [
           "Für",
-          "Entwicklungsteams auf GitHub"
+          "Russischsprachige, die eine Auswanderung erwägen"
+        ],
+        [
+          "Umfang",
+          "20 Länder, monatlich aktualisiert"
         ],
         [
           "Gesucht",
-          "Investition und Pilot-Teams"
+          "Investition und Partner"
         ]
       ]
     }
