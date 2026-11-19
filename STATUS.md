@@ -10,7 +10,9 @@ Updated: 2026-11-19
 - Astro 7, статическая сборка: 23 страницы + sitemap + 404 — proof: `npm run build` без ошибок.
 - Внутренние ссылки и якоря — proof: `node tools/check-links.mjs` → broken: 0.
 - Проекты вынесены в `projects/*.json` с валидацией при сборке + `_template.json`.
-- Контакты: «Написать» (Telegram, WhatsApp, Viber, Messenger) и «Профили» (LinkedIn, Facebook, X, GitHub).
+- Контакты: «Написать» (Telegram, WhatsApp, Viber, Messenger) и «Профили» (LinkedIn, Facebook, X, Instagram kstein78, Google Maps Local Guide, GitHub).
+- PR #1 https://github.com/kstein78/stein.today/pull/1 (ветка site-v1 → main).
+- Приватное превью главной (RU): https://claude.ai/artifact/CPTgtW6D9cb7Dp7foHVyEU
 - Карта на первом экране по реальным координатам (Раковац 45.185N 19.78E, Нови-Сад, Вайска 45.417N 19.117E).
 - Резюме `/ru/cv/`, `/en/cv/` с версией для печати и PDF; цифры дословно со stein-1.com (проверено 19.11.2026).
 - Шрифты Literata и Golos Text раздаются локально (без Google Fonts, из-за DSGVO).
@@ -18,7 +20,7 @@ Updated: 2026-11-19
 - Скриншоты десктоп/мобайл проверены.
 
 ## Next step
-1. Получить от Кости: домены сайтов Вайски и Провалы, адрес сайта 7pro8, доп. профили соцсетей, фото.
+1. Получить от Кости: домены сайтов Вайски и Провалы, адрес сайта 7pro8, фото, ответы на открытые вопросы.
 2. Сервер 2.28.137.150: A-записи stein.today/www → IP, vhost по `deploy/nginx-stein.today.conf`, certbot, SSH-ключ для деплоя → секреты в GitHub.
 3. Смержить PR → проверить живой сайт.
 4. Добавить SR (латиница) и DE.
