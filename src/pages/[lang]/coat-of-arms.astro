@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import { ui, LANGS, type Lang } from '../../data/content';
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+const t = ui[lang];
+const c = t.coa;
+---
+<Base lang={lang} title={c.metaTitle} description={c.metaDesc} path="coat-of-arms/">
+  <article class="wrap page coa">
+    <a class="crumb" href={`/${lang}/`}>← {t.back}</a>
+    <h1>{c.title}</h1>
+    <p class="summary">{c.lead}</p>
+
+    <figure class="coa-sheet">
+      <img src="/von-stein-coa.jpg" alt={c.photoAlt} width="1200" height="1341" loading="eager" />
+      <figcaption>{c.photoCaption}</figcaption>
+    </figure>
+
+    <section class="coa-logo">
+      <img src="/logo.svg" alt="" width="120" height="144" />
+      <div>
+        <h2>{c.logoTitle}</h2>
+        {c.logoText.map((p) => <p>{p}</p>)}
+      </div>
+    </section>
+
+    <section>
+      <h2>{c.familyTitle}</h2>
+      {c.familyText.map((p) => <p>{p}</p>)}
+      <p><a href={`/${lang}/local-history/`}>{c.familyMore}</a></p>
+    </section>
+  </article>
+</Base>

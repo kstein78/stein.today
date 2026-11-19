@@ -68,6 +68,25 @@ export default {
   back: 'Na početnu',
   footer: 'Ažurirano',
   langName: 'Srpski',
+  coa: {
+    footerLink: 'Grb na logotipu',
+    title: 'Grb na logotipu',
+    metaTitle: 'Grb von Stein i porodična istorija — Konstantin Štajn',
+    metaDesc: 'Odakle logotip stein.today: grb porodice fon Štajn sa lista iz kolekcije Konstantina Štajna. I ukratko o istraživanju porodične istorije.',
+    lead: 'Logotip sajta je nacrtan prema grbu porodice fon Štajn. Ovaj list je iz moje kolekcije i visi na mom zidu.',
+    photoAlt: 'Grb von Stein: plavi štit sa zlatnom krunisanom glavom jelena i tri zvezde, šlem, plašt i nakit',
+    photoCaption: 'Grb von Stein. Natpis na dnu: „Schwed. A. 30. 9. 1653“ — sudeći po njemu, švedsko plemstvo dodeljeno 30. septembra 1653.',
+    logoTitle: 'Kako je nastao logotip',
+    logoText: [
+      'Za logotip sam uzeo samo štit: plavo polje, zlatnu glavu jelena pod krunom i tri zlatne zvezde. Šlem, plašt i nakit sa krilima i mačem se u malom formatu stapaju u mrlju, pa ih na logotipu nema.',
+      'Štit i zvezde su nacrtani iznova, a glava jelena je precrtana sa gravure i učinjena simetričnom. Iste boje su i na ikoni sajta u kartici pregledača.',
+    ],
+    familyTitle: 'Porodična istorija',
+    familyText: [
+      'Istražujem istoriju svoje porodice, kao što su ranije to radili moj otac i moja baka. Tražim dokumente u arhivima više zemalja i rekonstruišem porodične loze.',
+    ],
+    familyMore: 'O dedi i njegovom prevodu „Eneide“: u odeljku Zavičajna istorija',
+  },
   cv: {
     title: 'CV',
     metaTitle: 'Konstantin Štajn — CV',
