@@ -74,7 +74,10 @@ export default {
     metaDesc: 'Where the stein.today logo comes from: the von Stein coat of arms on a print from Konstantin Stein’s collection. And a few words about researching family history.',
     lead: 'The logo of this site is drawn after the coat of arms of the von Stein family. This print is from my collection; it hangs on my wall.',
     photoAlt: 'The von Stein coat of arms: a blue shield with a gold crowned stag’s head and three stars, with helmet, mantling and crest',
-    photoCaption: 'The von Stein coat of arms. The note at the bottom reads “Schwed. A. 30. 9. 1653”, which suggests Swedish nobility granted on 30 September 1653.',
+    photoCaption: 'The von Stein coat of arms. The notes at the bottom: “L.” stands for Livonia, and “Schwed. A. 30. 9. 1653” for Swedish nobility granted on 30 September 1653.',
+    blazonTitle: 'The blazon',
+    blazonText: 'Armorials record these arms as Stein, Livonia (Swedish nobility, 30 September 1653): azure, a stag’s head affronté or, crowned of the same, with three gold stars, one above and two below. Crest: a silver sword with a gold hilt, point up, flanked by two gold stars, between a pair of wings divided alternately gold and blue.',
+    sourceLabel: 'Source of the blazon: coadb.com',
     logoTitle: 'How the logo was made',
     logoText: [
       'The logo uses the shield only: a blue field with a gold crowned stag’s head and three gold stars. At small sizes the helmet, mantling and the crest with wings and a sword blur into a blot, so they are left out.',
