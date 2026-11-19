@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import HeroMap from '../../components/HeroMap.astro';
+import Portrait from '../../components/Portrait.astro';
 import Symbol from '../../components/Symbol.astro';
 import Row from '../../components/Row.astro';
 import Contacts from '../../components/Contacts.astro';
@@ -25,12 +25,10 @@ const topJobs = jobs.slice(0, 4);
           <a class="btn" href="#contact">{t.ctaContact}</a>
         </div>
       </div>
-      <div>
-        <HeroMap lang={lang} />
-        <ul class="legend" aria-label={t.legendTitle}>
-          {statuses.map((s) => <li><Symbol status={s} inline size={14} />{t.legend[s]}</li>)}
-        </ul>
-      </div>
+      <Portrait lang={lang} />
+      <ul class="legend" aria-label={t.legendTitle}>
+        {statuses.map((s) => <li><Symbol status={s} inline size={14} />{t.legend[s]}</li>)}
+      </ul>
     </section>
 
     <section class="section" id="work">

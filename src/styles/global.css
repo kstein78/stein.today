@@ -68,7 +68,12 @@ a:hover { color: var(--bermet); text-decoration-color: currentColor; }
   display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.5rem 3rem;
   padding-block: clamp(1.5rem, 5vw, 4rem) clamp(2rem, 5vw, 3.5rem);
 }
-@media (min-width: 900px) { .hero { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); align-items: center; } }
+@media (min-width: 900px) { .hero { grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); align-items: center; } }
+.portrait { margin: 0; justify-self: center; width: min(100%, 26rem); }
+.portrait img, .portrait .ph { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 10px; background: var(--paper-deep); }
+.portrait .ph { display: grid; place-items: center; font: 700 clamp(3rem, 9vw, 5.5rem)/1 var(--serif); color: var(--contour); letter-spacing: -0.03em; border: 1.5px dashed var(--contour); }
+@media (max-width: 899px) { .portrait { order: -1; width: min(70%, 18rem); justify-self: start; } }
+.hero .legend { grid-column: 1 / -1; }
 .hero h1 {
   font-size: var(--s5); line-height: 1.02; letter-spacing: -0.025em; font-weight: 720;
   font-variation-settings: 'opsz' 72; margin: 0 0 0.35rem;
@@ -87,7 +92,7 @@ a:hover { color: var(--bermet); text-decoration-color: currentColor; }
 .btn:not(.primary):hover { border-color: var(--bermet); }
 
 /* ——— карта ——— */
-.map { margin: 0; }
+.map { margin: 0 0 2rem; }
 .map svg { width: 100%; height: auto; display: block; overflow: hidden; }
 .map .grat { stroke: var(--contour); stroke-width: 0.8; stroke-dasharray: 1 5; }
 .map text.deg { font-size: 15px; font-weight: 450; fill: var(--ink-soft); font-variant-numeric: tabular-nums; }

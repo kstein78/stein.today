@@ -1,0 +1,14 @@
+---
+// Фото: положите файл в public/photo.jpg (портрет 4:5, ~1000×1250). Пока файла нет — монограмма.
+import fs from 'node:fs';
+import { ui, type Lang } from '../data/content';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const has = fs.existsSync('public/photo.jpg');
+const alt = ui[lang].name;
+---
+<figure class="portrait">
+  {has
+    ? <img src="/photo.jpg" alt={alt} width="1000" height="1250" fetchpriority="high" />
+    : <div class="ph" role="img" aria-label={alt}>{lang === 'ru' ? 'КШ' : 'KS'}</div>}
+</figure>
