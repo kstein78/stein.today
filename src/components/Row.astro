@@ -6,7 +6,7 @@ const { item, lang } = Astro.props;
 const t = ui[lang];
 const x = item.t[lang];
 const page = hasPage(item) ? `/${lang}/${item.slug}/` : null;
-const host = item.url ? item.url.replace(/^https?:\/\//, '').replace(/\/$/, '') : null;
+const host = item.url ? (item.links?.find((l) => l.url === item.url)?.label ?? item.url.replace(/^https?:\/\//, '').replace(/\/$/, '')) : null;
 ---
 <li class="row" id={item.slug}>
   <Symbol status={item.status} inline size={15} />

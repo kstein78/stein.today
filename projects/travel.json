@@ -3,7 +3,7 @@
   "slug": "travel",
   "group": "hobby",
   "status": "collection",
-  "url": null,
+  "url": "https://www.google.com/maps/contrib/109485321545547043572/",
   "t": {
     "ru": {
       "title": "Путешествия",
@@ -13,5 +13,11 @@
       "title": "Travel",
       "summary": "I have lived, studied and worked in five countries. Google Maps Local Guide, level 8: I map places, write reviews and post photos."
     }
-  }
+  },
+  "links": [
+    {
+      "label": "Google Maps",
+      "url": "https://www.google.com/maps/contrib/109485321545547043572/"
+    }
+  ]
 }

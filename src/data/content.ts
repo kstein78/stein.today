@@ -35,6 +35,8 @@ export const contacts: { write: Link[]; profiles: Link[] } = {
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/konstantinstein/' },
     { label: 'Facebook', url: 'https://www.facebook.com/konstantin.stein' },
     { label: 'X', url: 'https://x.com/konstantinstein' },
+    { label: 'Instagram', url: 'https://www.instagram.com/kstein78/' },
+    { label: 'Google Maps', url: 'https://www.google.com/maps/contrib/109485321545547043572/' },
     { label: 'GitHub', url: 'https://github.com/kstein78' },
   ],
 };
