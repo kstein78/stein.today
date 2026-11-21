@@ -138,10 +138,10 @@ export const jobs: Job[] = [
     years: '08.2015 — 04.2018',
     org: 'Silver Rain',
     t: {
-      ru: { org: 'Радио «Серебряный дождь», Екатеринбург', role: 'CEO', text: 'Нанял всю команду из 23 человек, построил региональную сетку вещания, развил и продал проект.' },
-      en: { org: 'Silver Rain radio, Yekaterinburg', role: 'CEO', text: 'Hired the entire team of 23, built a regional programme schedule, grew the station and sold it.' },
-      sr: { org: 'Radio Silver Rain, Jekaterinburg', role: 'CEO', text: 'Zaposlio ceo tim od 23 ljudi, napravio regionalnu programsku šemu, razvio i prodao projekat.' },
-      de: { org: 'Radio Silver Rain, Jekaterinburg', role: 'CEO', text: 'Gesamtes Team von 23 Personen eingestellt, regionales Programmschema aufgebaut, Sender entwickelt und verkauft.' },
+      ru: { org: 'Радио «Серебряный дождь», Екатеринбург', role: 'CEO', text: 'Екатеринбургский филиал московской радиостанции. Нанял всю команду из 23 человек, построил региональную сетку вещания и развил станцию. В 2018 году ушёл в KP Digital и переехал в Москву.' },
+      en: { org: 'Silver Rain radio, Yekaterinburg', role: 'CEO', text: 'The Yekaterinburg branch of a Moscow radio station. Hired the entire team of 23, built a regional programme schedule and grew the station. In 2018 I moved to Moscow to join KP Digital.' },
+      sr: { org: 'Radio Silver Rain, Jekaterinburg', role: 'CEO', text: 'Ogranak moskovske radio stanice u Jekaterinburgu. Zaposlio ceo tim od 23 ljudi, napravio regionalnu programsku šemu i razvio stanicu. Godine 2018. prešao u KP Digital i preselio se u Moskvu.' },
+      de: { org: 'Radio Silver Rain, Jekaterinburg', role: 'CEO', text: 'Die Jekaterinburger Filiale eines Moskauer Radiosenders. Gesamtes Team von 23 Personen eingestellt, regionales Programmschema aufgebaut und den Sender entwickelt. 2018 Wechsel zu KP Digital und Umzug nach Moskau.' },
     },
   },
   {
