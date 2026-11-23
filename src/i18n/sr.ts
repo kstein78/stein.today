@@ -30,7 +30,7 @@ export default {
     title: 'Kako mogu da pomognem',
     intro: 'Zbog čega mi se ljudi obraćaju — poslovno i ne samo poslovno.',
     items: [
-      { title: 'Upravljanje biznisom, IT-om i medijima', text: 'Pokrećem i razvijam digitalne proizvode i medije: tim, sadržaj, saobraćaj, monetizacija. Od prototipa do milionske publike.' },
+      { title: 'Digitalni proizvodi i timovi', text: 'Pokrećem digitalne proizvode od nule i vodim ih do rezultata. Okupljam timove i organizujem rad tako da ishod bude iznad očekivanja: u BLITZ.PLUS do 158 ljudi i do 4–6,5 miliona jedinstvenih posetilaca dnevno.' },
       { title: 'Izlazak na međunarodna tržišta', text: 'Uvodim kompanije na tržišta drugih zemalja: tražim partnere i postavljam modele prodaje i saradnje koji funkcionišu. Tako sada radim sa 7pro8, radionicom luksuznih enterijera za automobile.' },
       { title: 'Rad sa klijentima i partnerima', text: 'Account menadžment, pregovori, partnerske mreže u različitim zemljama, ugovorni modeli koji donose profit.' },
       { title: 'Jezici i tržišta', text: 'Radim na ruskom, nemačkom, engleskom i srpskom. Tržišta Rusije i ZND, Nemačke, Srbije i Balkana poznajem iznutra.' },
