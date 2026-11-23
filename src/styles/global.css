@@ -235,3 +235,16 @@ a:hover { color: var(--bermet); text-decoration-color: currentColor; }
 @media (max-width: 560px) { .coa-logo { grid-template-columns: 3.5rem minmax(0, 1fr); } .coa-logo img { width: 3.5rem; } }
 .foot a { color: inherit; }
 .coa-source { font-family: var(--sans); font-size: 0.9rem; }
+
+/* ——— баннер согласия ——— */
+.consent { position: fixed; left: 50%; bottom: 1rem; transform: translateX(-50%); z-index: 20;
+  width: min(44rem, calc(100% - 2rem)); background: var(--ink); color: var(--paper); border-radius: 12px;
+  padding: 1rem 1.2rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem 1.4rem;
+  font-family: var(--sans); font-size: 0.92rem; line-height: 1.45; box-shadow: 0 12px 36px -12px rgba(21, 41, 46, 0.55); }
+.consent[hidden] { display: none; }
+.consent p { margin: 0; flex: 1 1 18rem; }
+.consent a { color: inherit; }
+.consent-actions { display: flex; gap: 0.6rem; }
+.consent .btn { border-color: var(--paper); color: var(--paper); padding: 0.55rem 1rem; }
+.consent .btn.primary { background: var(--paper); color: var(--ink); }
+.consent .btn.primary:hover { background: #fff; color: var(--bermet); border-color: #fff; }

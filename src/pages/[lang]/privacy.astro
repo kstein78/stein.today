@@ -1,0 +1,16 @@
+---
+import Base from '../../layouts/Base.astro';
+import { ui, LANGS, type Lang } from '../../data/content';
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+const t = ui[lang];
+const p = t.privacy;
+---
+<Base lang={lang} title={`${p.title} — ${t.name}`} description={p.metaDesc} path="privacy/">
+  <article class="wrap page">
+    <a class="crumb" href={`/${lang}/`}>← {t.back}</a>
+    <h1>{p.title}</h1>
+    <div class="body">{p.body.map((x) => <p>{x}</p>)}</div>
+    <p><a href="#" data-consent-open>{t.consent.settings}</a></p>
+  </article>
+</Base>

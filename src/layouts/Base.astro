@@ -4,9 +4,11 @@ import '@fontsource-variable/piazzolla/opsz-italic.css';
 import '@fontsource-variable/onest/index.css';
 import '../styles/global.css';
 import { ui, LANGS, type Lang } from '../data/content';
+import { analytics } from '../data/analytics';
+import Consent from '../components/Consent.astro';
 
-interface Props { lang: Lang; title: string; description: string; path: string; /** путь без языка, напр. "cv/" */ }
-const { lang, title, description, path } = Astro.props;
+interface Props { lang: Lang; title: string; description: string; path: string; /** путь без языка, напр. "cv/" */ noindex?: boolean }
+const { lang, title, description, path, noindex = false } = Astro.props;
 const t = ui[lang];
 const site = Astro.site!.origin;
 const url = (l: Lang) => `${site}/${l}/${path}`;
@@ -19,15 +21,21 @@ const built = new Date().toISOString().slice(0, 10);
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
   <meta name="description" content={description} />
+  {noindex && <meta name="robots" content="noindex, follow" />}
+  {analytics.googleVerification && <meta name="google-site-verification" content={analytics.googleVerification} />}
+  {analytics.yandexVerification && <meta name="yandex-verification" content={analytics.yandexVerification} />}
   <link rel="canonical" href={url(lang)} />
   {LANGS.map((l) => <link rel="alternate" hreflang={ui[l].htmlLang} href={url(l)} />)}
-  <link rel="alternate" hreflang="x-default" href={`${site}/`} />
+  <link rel="alternate" hreflang="x-default" href={url('en')} />
   <meta property="og:type" content="profile" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={url(lang)} />
   <meta property="og:locale" content={t.ogLocale} />
   <meta property="og:image" content={`${site}/og.png`} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="stein.today" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#eef1ea" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -41,7 +49,7 @@ const built = new Date().toISOString().slice(0, 10);
     knowsLanguage: ['ru', 'de', 'en', 'sr', 'uk'],
     worksFor: { '@type': 'Organization', name: 'Optilife', url: 'https://optilife.rs' },
     address: { '@type': 'PostalAddress', addressLocality: 'Rakovac', addressCountry: 'RS' },
-    sameAs: ['https://www.linkedin.com/in/konstantinstein/', 'https://www.facebook.com/konstantin.stein', 'https://x.com/konstantinstein', 'https://github.com/kstein78', 'https://www.instagram.com/kstein78/', 'https://www.google.com/maps/contrib/109485321545547043572/', 'https://stein-1.com'],
+    sameAs: ['https://www.linkedin.com/in/konstantinstein/', 'https://www.facebook.com/konstantin.stein', 'https://x.com/konstantinstein', 'https://github.com/kstein78', 'https://www.instagram.com/kstein78/', 'https://www.google.com/maps/contrib/109485321545547043572/'],
   })} />
 </head>
 <body>
@@ -64,8 +72,9 @@ const built = new Date().toISOString().slice(0, 10);
   </header>
   <main id="main"><slot /></main>
   <footer class="wrap foot">
-    <span>© {new Date().getFullYear()} {t.name} · <a href={`/${lang}/coat-of-arms/`}>{t.coa.footerLink}</a></span>
+    <span>© {new Date().getFullYear()} {t.name} · <a href={`/${lang}/coat-of-arms/`}>{t.coa.footerLink}</a> · <a href={`/${lang}/privacy/`}>{t.privacy.title}</a>{(analytics.ga4 || analytics.yandexMetrika) && <> · <a href="#" data-consent-open>{t.consent.settings}</a></>}</span>
     <span>{t.footer}: {built}</span>
   </footer>
+  <Consent lang={lang} />
 </body>
 </html>

@@ -1,0 +1,59 @@
+---
+// Баннер согласия на cookies. Пока посетитель не нажал «Согласен», GA4 и Метрика не загружаются.
+// Выбор хранится в localStorage ('stein-consent' = 'yes' | 'no'); ссылка в подвале открывает баннер снова.
+import { analytics } from '../data/analytics';
+import { ui, type Lang } from '../data/content';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang].consent;
+const enabled = Boolean(analytics.ga4 || analytics.yandexMetrika);
+const cfg = { ga4: analytics.ga4, ym: analytics.yandexMetrika };
+---
+{enabled && (
+  <>
+    <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label={t.title} hidden>
+      <p>{t.text} <a href={`/${lang}/privacy/`}>{t.more}</a></p>
+      <div class="consent-actions">
+        <button type="button" class="btn" data-consent="no">{t.decline}</button>
+        <button type="button" class="btn primary" data-consent="yes">{t.accept}</button>
+      </div>
+    </div>
+    <script is:inline define:vars={{ cfg }}>
+      (function () {
+        var KEY = 'stein-consent';
+        function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+        function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+        var loaded = false;
+        function load() {
+          if (loaded) return; loaded = true;
+          if (cfg.ga4) {
+            var s = document.createElement('script'); s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=' + cfg.ga4; document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function () { window.dataLayer.push(arguments); };
+            window.gtag('js', new Date()); window.gtag('config', cfg.ga4);
+          }
+          if (cfg.ym) {
+            (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); }; m[i].l = 1 * new Date();
+              k = e.createElement(t), a = e.getElementsByTagName(t)[0]; k.async = 1; k.src = r; a.parentNode.insertBefore(k, a);
+            })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+            window.ym(cfg.ym, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: false });
+          }
+        }
+        var box = document.getElementById('consent');
+        function show() { box.hidden = false; }
+        var v = get();
+        if (v === 'yes') load(); else if (v !== 'no') show();
+        box.addEventListener('click', function (e) {
+          var b = e.target.closest('[data-consent]'); if (!b) return;
+          var ok = b.getAttribute('data-consent') === 'yes';
+          set(ok ? 'yes' : 'no'); box.hidden = true;
+          if (ok) load(); else if (loaded) location.reload();
+        });
+        document.addEventListener('click', function (e) {
+          if (e.target.closest('[data-consent-open]')) { e.preventDefault(); show(); }
+        });
+      })();
+    </script>
+  </>
+)}
