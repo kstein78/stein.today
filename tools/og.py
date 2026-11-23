@@ -8,7 +8,7 @@ async def main():
         await pg.evaluate("""() => {
           document.body.innerHTML = `<div style="width:1200px;height:630px;display:grid;grid-template-columns:1fr 420px;align-items:center;box-sizing:border-box;background:#eef1ea;border-bottom:14px solid #15292e"><div style="padding:0 0 0 80px">
             <div style="font:780 88px/1.02 'Piazzolla Variable';letter-spacing:-0.01em;word-spacing:0.08em;color:#15292e">Konstantin Stein</div>
-            <div style="font:500 30px/1.4 'Onest Variable';color:#4a5d60;margin-top:22px">Константин Штейн — media, IT, projects, passions</div>
+            <div style="font:500 30px/1.4 'Onest Variable';color:#4a5d60;margin-top:22px">Константин Штейн — business, IT, projects, passions</div>
             <div style="font:650 32px 'Onest Variable';color:#3d7a8a;margin-top:40px">stein.today</div></div>
             <img src="/photo.jpg" style="width:420px;height:616px;object-fit:cover;object-position:center 20%"></div>`;
         }""")

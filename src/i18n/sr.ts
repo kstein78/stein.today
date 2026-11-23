@@ -5,12 +5,12 @@ export default {
   name: 'Konstantin Štajn',
   nameAlt: 'Konstantin Stein, Константин Штейн',
   monogram: 'KŠ',
-  metaTitle: 'Konstantin Štajn — mediji, IT, projekti i hobiji',
+  metaTitle: 'Konstantin Štajn — biznis, IT, projekti i hobiji',
   metaDesc: 'Konstantin Štajn: IT i mediji, rad sa klijentima, imenovanje, brending i sajtovi, električni automobili i preseljenje u Srbiju. Projekti, CV i kontakt.',
   skip: 'Na sadržaj',
   navAria: 'Odeljci',
   nav: { help: 'Pomoć', work: 'Posao', invest: 'Projekti', sites: 'Sajtovi', hobby: 'Hobiji', contact: 'Kontakt' },
-  lead: 'Medijski menadžer i preduzetnik. U IT-u od 1995, u medijima od 2000: radio, informativni sajtovi sa milionskom publikom, a danas IT proizvodi sa veštačkom inteligencijom. Od 2023. živim u Rakovcu na Fruškoj gori, kod Novog Sada.',
+  lead: 'Menadžer i preduzetnik. U IT-u od 1995, u medijima od 2000: radio, informativni sajtovi sa milionskom publikom, a danas IT proizvodi sa veštačkom inteligencijom. Od 2023. živim u Rakovcu na Fruškoj gori, kod Novog Sada.',
   leadSecond: 'Ovde je sve na jednom mestu: posao, projekti kojima trebaju investitori i partneri, moji sajtovi i ono čime se supruga i ja bavimo van posla.',
   ctaCv: 'Detaljan CV',
   ctaContact: 'Pišite mi',
@@ -30,7 +30,7 @@ export default {
     title: 'Kako mogu da pomognem',
     intro: 'Zbog čega mi se ljudi obraćaju — poslovno i ne samo poslovno.',
     items: [
-      { title: 'Upravljanje u IT-u i medijima', text: 'Pokrećem i razvijam digitalne proizvode i medije: tim, sadržaj, saobraćaj, monetizacija. Od prototipa do milionske publike.' },
+      { title: 'Upravljanje biznisom, IT-om i medijima', text: 'Pokrećem i razvijam digitalne proizvode i medije: tim, sadržaj, saobraćaj, monetizacija. Od prototipa do milionske publike.' },
       { title: 'Izlazak na međunarodna tržišta', text: 'Uvodim kompanije na tržišta drugih zemalja: tražim partnere i postavljam modele prodaje i saradnje koji funkcionišu. Tako sada radim sa 7pro8, radionicom luksuznih enterijera za automobile.' },
       { title: 'Rad sa klijentima i partnerima', text: 'Account menadžment, pregovori, partnerske mreže u različitim zemljama, ugovorni modeli koji donose profit.' },
       { title: 'Jezici i tržišta', text: 'Radim na ruskom, nemačkom, engleskom i srpskom. Tržišta Rusije i ZND, Nemačke, Srbije i Balkana poznajem iznutra.' },
@@ -112,7 +112,7 @@ export default {
   cv: {
     title: 'CV',
     metaTitle: 'Konstantin Štajn — CV',
-    lead: 'CEO, osnivač i medijski menadžer. U IT-u od 1995, u medijima od 2000, iskustvo u vođenju biznisa u pet zemalja.',
+    lead: 'CEO, osnivač i menadžer. U IT-u od 1995, u medijima od 2000, iskustvo u vođenju biznisa u pet zemalja.',
     strengths: 'Šta radim dobro',
     strengthsList: [
       'Brzo okupljam jake timove i vodim ih do cilja.',
