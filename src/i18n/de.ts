@@ -29,7 +29,7 @@ export default {
     title: 'Wobei ich helfen kann',
     intro: 'Womit man zu mir kommt — beruflich und darüber hinaus.',
     items: [
-      { title: 'Unternehmensführung, IT und Medien', text: 'Ich starte und entwickle digitale Produkte und Medien: Team, Content, Traffic, Monetarisierung. Vom Prototyp bis zum Millionenpublikum.' },
+      { title: 'Digitale Produkte und Teams', text: 'Ich starte digitale Produkte von null und bringe sie zum Ergebnis. Ich baue Teams auf und organisiere ihre Arbeit so, dass das Resultat über der Messlatte liegt: bei BLITZ.PLUS bis zu 158 Leute und 4–6,5 Mio. Unique Visitors pro Tag.' },
       { title: 'Internationale Expansion', text: 'Ich bringe Unternehmen in neue Märkte: Partner finden, funktionierende Vertriebs- und Kooperationsmodelle aufbauen. Genau das mache ich gerade für 7pro8, ein Studio für luxuriöse Fahrzeuginterieurs.' },
       { title: 'Kunden und Partner', text: 'Account-Management, Verhandlungen, Partnernetzwerke in verschiedenen Ländern und Vertragsmodelle, die sich rechnen.' },
       { title: 'Sprachen und Märkte', text: 'Ich arbeite auf Russisch, Deutsch, Englisch und Serbisch und kenne die Märkte Russlands und der GUS, Deutschlands, Serbiens und des Balkans von innen.' },

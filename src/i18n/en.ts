@@ -29,7 +29,7 @@ export default {
     title: 'How I can help',
     intro: 'What people come to me for, in business and beyond.',
     items: [
-      { title: 'Business, IT and media management', text: 'I launch and grow digital products and media: team, content, traffic and monetisation. From prototype to an audience of millions.' },
+      { title: 'Digital products and teams', text: 'I launch digital products from scratch and see them through to results. I build teams and set up their work so the outcome clears the bar: at BLITZ.PLUS, up to 158 people and 4–6.5 million unique visitors a day.' },
       { title: 'International expansion', text: 'I take companies into new countries: finding partners and setting up sales and cooperation models that work. That is what I am doing now for 7pro8, a luxury automotive interior studio.' },
       { title: 'Clients and partners', text: 'Account management, negotiations, partner networks across countries, and contract models that make money.' },
       { title: 'Languages and markets', text: 'I work in Russian, German, English and Serbian, and know the markets of Russia and the CIS, Germany, Serbia and the Balkans from the inside.' },
