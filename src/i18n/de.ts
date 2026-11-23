@@ -4,12 +4,12 @@ export default {
   name: 'Konstantin Stein',
   nameAlt: 'Константин Штейн, Konstantin Štajn',
   monogram: 'KS',
-  metaTitle: 'Konstantin Stein — Medien, IT, Projekte und Leidenschaften',
+  metaTitle: 'Konstantin Stein — Business, IT, Projekte und Leidenschaften',
   metaDesc: 'Konstantin Stein: IT- und Medienmanagement, Kundenarbeit, Naming, Branding und Websites, Elektroautos und Umzug nach Serbien. Projekte, Lebenslauf, Kontakt.',
   skip: 'Zum Inhalt',
   navAria: 'Bereiche',
   nav: { help: 'Leistungen', work: 'Beruf', invest: 'Projekte', sites: 'Websites', hobby: 'Leidenschaften', contact: 'Kontakt' },
-  lead: 'Medienmanager und Unternehmer. Seit 1995 in der IT, seit 2000 in den Medien: Radio, Nachrichtenportale mit Millionenpublikum, heute KI-gestützte IT-Produkte. Seit 2023 lebe ich in Rakovac an der Fruška Gora, bei Novi Sad.',
+  lead: 'Manager und Unternehmer. Seit 1995 in der IT, seit 2000 in den Medien: Radio, Nachrichtenportale mit Millionenpublikum, heute KI-gestützte IT-Produkte. Seit 2023 lebe ich in Rakovac an der Fruška Gora, bei Novi Sad.',
   leadSecond: 'Hier ist alles versammelt: meine Arbeit, Projekte, die Investoren und Partner suchen, meine Websites und das, womit meine Frau und ich uns außerhalb der Arbeit beschäftigen.',
   ctaCv: 'Ausführlicher Lebenslauf',
   ctaContact: 'Schreiben Sie mir',
@@ -29,7 +29,7 @@ export default {
     title: 'Wobei ich helfen kann',
     intro: 'Womit man zu mir kommt — beruflich und darüber hinaus.',
     items: [
-      { title: 'Management in IT und Medien', text: 'Ich starte und entwickle digitale Produkte und Medien: Team, Content, Traffic, Monetarisierung. Vom Prototyp bis zum Millionenpublikum.' },
+      { title: 'Unternehmensführung, IT und Medien', text: 'Ich starte und entwickle digitale Produkte und Medien: Team, Content, Traffic, Monetarisierung. Vom Prototyp bis zum Millionenpublikum.' },
       { title: 'Internationale Expansion', text: 'Ich bringe Unternehmen in neue Märkte: Partner finden, funktionierende Vertriebs- und Kooperationsmodelle aufbauen. Genau das mache ich gerade für 7pro8, ein Studio für luxuriöse Fahrzeuginterieurs.' },
       { title: 'Kunden und Partner', text: 'Account-Management, Verhandlungen, Partnernetzwerke in verschiedenen Ländern und Vertragsmodelle, die sich rechnen.' },
       { title: 'Sprachen und Märkte', text: 'Ich arbeite auf Russisch, Deutsch, Englisch und Serbisch und kenne die Märkte Russlands und der GUS, Deutschlands, Serbiens und des Balkans von innen.' },
@@ -111,7 +111,7 @@ export default {
   cv: {
     title: 'Lebenslauf',
     metaTitle: 'Konstantin Stein — Lebenslauf',
-    lead: 'CEO, Gründer und Medienmanager. Seit 1995 in der IT, seit 2000 in den Medien, Erfahrung in der Unternehmensführung in fünf Ländern.',
+    lead: 'CEO, Gründer und Manager. Seit 1995 in der IT, seit 2000 in den Medien, Erfahrung in der Unternehmensführung in fünf Ländern.',
     strengths: 'Was ich gut kann',
     strengthsList: [
       'Ich baue schnell starke Teams auf und führe sie zum Ziel.',

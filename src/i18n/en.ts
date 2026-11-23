@@ -4,12 +4,12 @@ export default {
   name: 'Konstantin Stein',
   nameAlt: 'Константин Штейн, Konstantin Štajn',
   monogram: 'KS',
-  metaTitle: 'Konstantin Stein — media, IT, projects and passions',
+  metaTitle: 'Konstantin Stein — business, IT, projects and passions',
   metaDesc: 'Konstantin Stein: IT and media management, client work, naming, branding and websites, electric cars and moving to Serbia. Projects, CV and contacts.',
   skip: 'Skip to content',
   navAria: 'Sections',
   nav: { help: 'How I help', work: 'Work', invest: 'Projects', sites: 'Websites', hobby: 'Passions', contact: 'Contact' },
-  lead: 'Media executive and entrepreneur. In IT since 1995, in media since 2000: radio, news sites with audiences in the millions, and now AI-powered IT products. Since 2023 I live in Rakovac on Fruška Gora, near Novi Sad.',
+  lead: 'Business executive and entrepreneur. In IT since 1995, in media since 2000: radio, news sites with audiences in the millions, and now AI-powered IT products. Since 2023 I live in Rakovac on Fruška Gora, near Novi Sad.',
   leadSecond: 'Everything is here: my work, projects that need investors and partners, my websites, and what my wife and I do outside work.',
   ctaCv: 'Full CV',
   ctaContact: 'Get in touch',
@@ -29,7 +29,7 @@ export default {
     title: 'How I can help',
     intro: 'What people come to me for, in business and beyond.',
     items: [
-      { title: 'IT and media management', text: 'I launch and grow digital products and media: team, content, traffic and monetisation. From prototype to an audience of millions.' },
+      { title: 'Business, IT and media management', text: 'I launch and grow digital products and media: team, content, traffic and monetisation. From prototype to an audience of millions.' },
       { title: 'International expansion', text: 'I take companies into new countries: finding partners and setting up sales and cooperation models that work. That is what I am doing now for 7pro8, a luxury automotive interior studio.' },
       { title: 'Clients and partners', text: 'Account management, negotiations, partner networks across countries, and contract models that make money.' },
       { title: 'Languages and markets', text: 'I work in Russian, German, English and Serbian, and know the markets of Russia and the CIS, Germany, Serbia and the Balkans from the inside.' },
@@ -111,7 +111,7 @@ export default {
   cv: {
     title: 'CV',
     metaTitle: 'Konstantin Stein — CV',
-    lead: 'CEO, founder and media executive. In IT since 1995 and in media since 2000, with business management experience in five countries.',
+    lead: 'CEO, founder and business executive. In IT since 1995 and in media since 2000, with business management experience in five countries.',
     strengths: 'What I do well',
     strengthsList: [
       'I build strong teams quickly and lead them to the goal.',
